@@ -1,0 +1,127 @@
+set nocompatible              " be iMproved, required for Vundle
+syntax on " enable syntax highlighting
+set tabstop=2 " spaces per tab visually
+set softtabstop=2 " spaces per tab when editing
+set sw=2 " Use 2 spaces when indenting visual blocks
+set expandtab  " tabs are spaces
+set number  " show line numbers
+set showcmd " show command bar
+set cursorline " highlight current line
+filetype plugin indent on " load filetype-specific indent files
+set wildmenu " visual autocomplete for command menu
+set lazyredraw " redraw only when needed
+set showmatch " highlight matching brackets
+set incsearch " search as we type
+set hlsearch " highlight matches
+set clipboard=unnamed " Use the system clipboard by default for yanking/pasting
+set backspace=indent,eol,start " Make backspace delete things not just inserted
+set nobackup       " no backup files
+set nowritebackup  " only in case you don't want a backup file while editing
+set noswapfile     " no swap files
+set autowriteall   " Automatically write buffers when opening a new one (various commands)
+set splitbelow     " Make the new vertical split the bottom one
+set splitright     " Make the new vertical split the right one
+set ruler          " show the cursor position
+set showcmd        " Show incomplete commands
+set laststatus=2   " Always display the status line
+
+" Change the cursor shape based on mode
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+let mapleader=" " " Map leader key to space
+
+" Open .vimrc and source it
+nmap <leader>rc :split $MYVIMRC<cr>
+nmap <leader>rl :source $MYVIMRC<cr>
+
+" move by visual lines rather than machine lines
+nnoremap j gj
+nnoremap k gk
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+
+" jk and jj are both escape
+inoremap jk <esc>
+inoremap jj <esc>
+
+" Pane movement commands
+nmap <leader>k :wincmd k<CR>
+nmap <leader>j :wincmd j<CR>
+nmap <leader>h :wincmd h<CR>
+nmap <leader>l :wincmd l<CR>
+
+" Switch to most recently used buffer
+nmap <leader><leader> :b#<CR>
+" Search through open buffers
+nmap <leader>b :b<Space>
+" Write current buffer
+nmap <leader>s :w<CR>
+" remove search highlights
+nnoremap <C-l> :nohlsearch<CR>
+
+filetype off                  " required for Vundle
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive' " Add nice git bindings/interactions
+Plugin 'wincent/command-t' " Fuzzy-finder/command-palette
+Plugin 'scrooloose/nerdcommenter' " Adds easy comment toggling
+Plugin 'terryma/vim-multiple-cursors' " Sublime-style multiple cursors
+Plugin 'sheerun/vim-polyglot' " Many languages, syntax, etc.
+Plugin 'flazz/vim-colorschemes' " Colorscheme pack
+Plugin 'tpope/vim-surround' " Handle quotes, parens, tags much more easily
+Plugin 'tpope/vim-repeat'   " Make . work with vim-surround and other plugins
+Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
+Plugin 'Valloric/YouCompleteMe' " Auto completion
+Plugin 'scrooloose/syntastic' " Syntax checker
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+colorscheme molokai
+
+" Use relative numbers in normal mode, and absolute in insert
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
+
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+
+" Make it obvious where 100 characters is but don't auto wrap.
+set colorcolumn=100
+highlight ColorColumn ctermbg=darkyellow guibg=darkyellow
+set wrap
+set linebreak
+set nolist
+
+" Treat <li> and <p> tags like the block tags they are
+let g:html_indent_tags = 'li\|p'
+
+
+" Recommended syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Trim whitespace on save
+autocmd BufWritePre * StripWhitespace
