@@ -19,6 +19,7 @@ set nobackup       " no backup files
 set nowritebackup  " only in case you don't want a backup file while editing
 set noswapfile     " no swap files
 set autowriteall   " Automatically write buffers when opening a new one (various commands)
+set autoread       " Automatically read buffers in when changed on disk
 set splitbelow     " Make the new vertical split the bottom one
 set splitright     " Make the new vertical split the right one
 set ruler          " show the cursor position
@@ -144,3 +145,8 @@ function! PasteCode()
 endfunction
 
 nmap <leader>p :call PasteCode()<CR>
+
+" Save everything on FocusLost (unnamed buffers go silently unsaved)
+au FocusLost,BufLeave,BufHidden * silent! wa
+" With autoread set, check for changes on disk when editing a file
+au FocusGained,BufEnter * checktime
