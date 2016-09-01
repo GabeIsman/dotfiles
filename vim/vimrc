@@ -33,7 +33,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 let mapleader=" " " Map leader key to space
 
 " Open .vimrc and source it
-nmap <leader>rc :split $MYVIMRC<cr>
+nmap <leader>rc :tabedit $MYVIMRC<cr>
 nmap <leader>rl :source $MYVIMRC<cr>
 
 " move by visual lines rather than machine lines
@@ -124,3 +124,7 @@ let g:syntastic_check_on_wq = 0
 
 " Trim whitespace on save
 autocmd BufWritePre * StripWhitespace
+
+" CtrlP mappings
+nmap <leader>o :CtrlP<cr>
+nmap <leader>d :CtrlP <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr><cr>
