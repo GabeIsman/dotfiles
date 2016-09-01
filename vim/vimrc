@@ -30,6 +30,8 @@ set scrolloff=1    " Keep one line below/above cursor
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+" Tell vitality not to bother, since we just did it.
+let g:vitality_fix_cursor = 0
 
 let mapleader=" " " Map leader key to space
 
@@ -82,6 +84,7 @@ Plugin 'tpope/vim-repeat'   " Make . work with vim-surround and other plugins
 Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
 Plugin 'Valloric/YouCompleteMe' " Auto completion
 Plugin 'scrooloose/syntastic' " Syntax checker
+Plugin 'sjl/vitality.vim'     " FocusGained,FocusLost events piped from iTerm2
 
 call vundle#end()            " required
 filetype plugin indent on    " required
