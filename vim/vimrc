@@ -72,7 +72,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive' " Add nice git bindings/interactions
-Plugin 'wincent/command-t' " Fuzzy-finder/command-palette
+Plugin 'ctrlpvim/ctrlp.vim' " Fuzzy-finder
 Plugin 'scrooloose/nerdcommenter' " Adds easy comment toggling
 Plugin 'terryma/vim-multiple-cursors' " Sublime-style multiple cursors
 Plugin 'sheerun/vim-polyglot' " Many languages, syntax, etc.
