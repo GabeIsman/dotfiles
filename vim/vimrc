@@ -35,4 +35,6 @@ Plugin 'sjl/vitality.vim'     " FocusGained,FocusLost events piped from iTerm2
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+runtime macros/matchit.vim
+
 call s:SourceConfigFilesIn('rcfiles')
