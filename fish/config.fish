@@ -19,6 +19,8 @@ set PATH /Library/Frameworks/Python.framework/Versions/3.5/bin $PATH
 ### Add TeX to the path
 set PATH $PATH /Library/TeX/Distributions/Programs/texbin
 
+rvm use 2.3.0
+
 # Virtualfish
 export VIRTUALFISH_HOME=$HOME/Envs
 export PROJECT_HOME=$HOME/Code
