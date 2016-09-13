@@ -10,6 +10,12 @@ nnoremap <leader>. @:
 nnoremap <leader>rd :redraw!<cr>
 " Map :quit
 nnoremap <leader>q :quit<cr>
+" Git leader mappings
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gd :Gdiff<cr>
+
+" Nicer code pasting
 function! PasteCode()
   set paste
   execute "normal! o\<esc>\"*]p"
