@@ -37,6 +37,7 @@ Plugin 'vim-ruby/vim-ruby' " Install vim-ruby to get latest version (not bundled
 Plugin 'tpope/vim-bundler' " Integration with Gemfiles
 Plugin 'tpope/vim-rails' " Tons of features for rails projects
 Plugin 'tpope/vim-rake' " Nicer file navigation for ruby libraries
+Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
 
 call vundle#end()            " required
 filetype plugin indent on    " required
