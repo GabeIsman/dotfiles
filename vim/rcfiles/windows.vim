@@ -7,7 +7,7 @@ nmap <leader>l :wincmd l<CR>
 " Switch to most recently used buffer
 nmap <leader><leader> :b#<CR>
 " Search through open buffers
-nmap <leader>b :b<Space>
+nmap <leader>b :CtrlPBuffer<cr>
 
 " CtrlP mappings
 nmap <leader>o :CtrlP<cr>
