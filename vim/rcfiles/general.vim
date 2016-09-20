@@ -22,7 +22,6 @@ set autowriteall   " Automatically write buffers when opening a new one (various
 set autoread       " Automatically read buffers in when changed on disk
 set splitbelow     " Make the new vertical split the bottom one
 set splitright     " Make the new vertical split the right one
-set ruler          " show the cursor position
 set showcmd        " Show incomplete commands
 set laststatus=2   " Always display the status line
 set scrolloff=1    " Keep one line below/above cursor
