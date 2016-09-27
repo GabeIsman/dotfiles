@@ -16,6 +16,9 @@ set PATH /Library/Frameworks/Python.framework/Versions/3.5/bin $PATH
 ### Add TeX to the path
 set PATH $PATH /Library/TeX/Distributions/Programs/texbin
 
+# Move /usr/local/bin ahead of /usr/bin to allow overriding system binaries
+set PATH /usr/local/bin $PATH
+
 # Virtualfish
 export VIRTUALFISH_HOME=$HOME/Envs
 export PROJECT_HOME=$HOME/Code
@@ -24,5 +27,6 @@ eval (python -m virtualfish compat_aliases)
 
 # Look into https://github.com/oh-my-fish/oh-my-fish
 
-# Load rbenv
+# Load rbenv and set up path
+set PATH /Users/admin/.rbenv/shims:/Users/admin/.rbenv/bin $PATH
 status --is-interactive; and . (rbenv init -|psub)
