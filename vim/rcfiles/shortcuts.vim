@@ -18,6 +18,11 @@ nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>e :e %:h/
 nnoremap <leader>vs %:h/
 nnoremap <leader>sp :e %:h/
+" RSpec.vim mappings
+map <Leader>tf :call RunCurrentSpecFile()<CR>
+map <Leader>ts :call RunNearestSpec()<CR>
+map <Leader>tl :call RunLastSpec()<CR>
+map <Leader>ta :call RunAllSpecs()<CR>
 
 " Nicer code pasting
 function! PasteCode()
