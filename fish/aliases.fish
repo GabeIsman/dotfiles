@@ -14,6 +14,7 @@ alias ci="git commit --no-edit"
 alias untrkd="git status --short | grep ^\?\? | cut -d \" \" -f 2 | xargs git add"
 alias rmuntrkd="git status --short | grep ^\?\? | cut -d \" \" -f 2 | xargs rm"
 alias rb="git for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:relative)|||%(refname:short)|||%(contents:subject)' refs/heads/ | column -s '|||' -t"
+alias rmbr="git branch --merged | egrep -v \"(^\*|master)\" | xargs git branch -d"
 
 # deploy a specific folder to the gh-pages branch
 function ghdeploy -d "Push a specific directory to the gh-pages branch" -a dir
