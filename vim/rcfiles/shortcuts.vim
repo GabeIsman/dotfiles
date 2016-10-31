@@ -23,6 +23,12 @@ map <Leader>tf :call RunCurrentSpecFile()<CR>
 map <Leader>ts :call RunNearestSpec()<CR>
 map <Leader>tl :call RunLastSpec()<CR>
 map <Leader>ta :call RunAllSpecs()<CR>
+" Go to the file in quotes
+map <leader>' vi'gf
+" Retab the whole file
+map <leader>rt :%retab<cr>
+" Re-indent the whole file (no idea why I had to put to <c-o>'s)
+map <leader>= ggVG=<c-o><c-o>
 
 " Nicer code pasting
 function! PasteCode()
