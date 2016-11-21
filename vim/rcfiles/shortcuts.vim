@@ -19,10 +19,12 @@ nnoremap <leader>e :e %:h/
 nnoremap <leader>vs %:h/
 nnoremap <leader>sp :e %:h/
 " RSpec.vim mappings
-map <Leader>tf :call RunCurrentSpecFile()<CR>
-map <Leader>ts :call RunNearestSpec()<CR>
-map <Leader>tl :call RunLastSpec()<CR>
-map <Leader>ta :call RunAllSpecs()<CR>
+map <Leader>tf :call RunCurrentSpecFile()<cr>
+map <Leader>ts :call RunNearestSpec()<cr>
+map <Leader>tl :call RunLastSpec()<cr>
+map <Leader>ta :call RunAllSpecs()<cr>
+" Split out projectionist alternate file
+map <Leader>tg :AV<cr>
 " Go to the file in quotes
 map <leader>' vi'gf
 " Retab the whole file
@@ -37,5 +39,5 @@ function! PasteCode()
   set nopaste
 endfunction
 
-nmap <leader>p :call PasteCode()<CR>
+nmap <leader>p :call PasteCode()<cr>
 
