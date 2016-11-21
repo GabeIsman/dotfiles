@@ -24,3 +24,6 @@ nnoremap <leader>re ye:s/<c-r>"//g<left><left>
 " Replace the visual selection on the current line
 vnoremap <leader>rv y:s/<c-r>"//g<left><left>
 
+" Search for the visual selection
+vnoremap / y/<c-r>"<cr>
+
