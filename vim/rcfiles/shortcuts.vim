@@ -29,8 +29,11 @@ map <Leader>tg :AV<cr>
 map <leader>' vi'gf
 " Retab the whole file
 map <leader>rt :%retab<cr>
-" Re-indent the whole file (no idea why I had to put to <c-o>'s)
-map <leader>= ggVG=<c-o><c-o>
+" Re-indent the whole file
+map <leader>= maggVG=`a
+map <leader>, :s/,/,\r/g<cr>:nohlsearch<cr>=ap<cr>
+" Repeat last command for whole file
+map <leader>a ma:%<c-r>:<cr>`a
 
 " Nicer code pasting
 function! PasteCode()
