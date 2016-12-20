@@ -46,6 +46,7 @@ map <leader>= maggVG=`a
 map <leader>, :s/,/,\r/g<cr>:nohlsearch<cr>=ap<cr>
 " Repeat last command for whole file
 map <leader>a ma:%<c-r>:<cr>`a
+map <leader>ya maggVGy`a
 
 " Nicer code pasting
 function! PasteCode()
