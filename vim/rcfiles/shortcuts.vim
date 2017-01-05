@@ -14,6 +14,7 @@ nnoremap <leader>q :quit<cr>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gb :Gblame<cr>
 " Open a new file in the current directory
 nnoremap <leader>e :e %:h/
 nnoremap <leader>vs %:h/
