@@ -40,6 +40,8 @@ map <leader>mt :Tmodel<space>
 map <leader>' vi'gf
 " Go to file in vertical split
 nnoremap gv :vsp <c-r>=findfile(rails#cfile())<cr><cr>
+" Open last buffer in vertical split
+nnoremap <leader>vl :vert sb#<cr>
 " Retab the whole file
 map <leader>rt :%retab<cr>
 " Re-indent the whole file
