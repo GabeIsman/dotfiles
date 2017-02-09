@@ -41,6 +41,9 @@ Plugin 'tpope/vim-ragtag' " Some goodies for better tag manipulation in XML-ish 
 Plugin 'thoughtbot/vim-rspec' " Lightweight integration with rspec
 Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
 Plugin 'jiangmiao/auto-pairs' " Automatically add closing pairs
+Plugin 'SirVer/ultisnips' " Snippet engine
+Plugin 'honza/vim-snippets' " Snippet library
+Plugin 'ervandew/supertab' " Allow overloading of tab
 
 call vundle#end()            " required
 filetype plugin indent on    " required
