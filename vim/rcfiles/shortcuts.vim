@@ -25,7 +25,7 @@ map <Leader>ts :call RunNearestSpec()<cr>
 map <Leader>tl :call RunLastSpec()<cr>
 map <Leader>ta :call RunAllSpecs()<cr>
 " Split out projectionist alternate file
-map <Leader>tg :AV<cr>
+map <Leader>gt :AV<cr>
 " Open a controller
 map <leader>cs :Scontroller<space>
 map <leader>cv :Vcontroller<space>
@@ -35,7 +35,6 @@ map <leader>ct :Tcontroller<space>
 map <leader>ms :Smodel<space>
 map <leader>mv :Vmodel<space>
 map <leader>me :Emodel<space>
-map <leader>mt :Tmodel<space>
 " Go to the file in quotes
 map <leader>' vi'gf
 " Go to file in vertical split
