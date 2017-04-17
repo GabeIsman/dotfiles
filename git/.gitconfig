@@ -23,3 +23,5 @@
 	excludesfile = ~/.gitignore
 [init]
 	templatedir = ~/.git_template
+[pull]
+	rebase = true
