@@ -1,11 +1,12 @@
 " Window movement commands
-nmap <leader>k :wincmd k<CR>
-nmap <leader>j :wincmd j<CR>
-nmap <leader>h :wincmd h<CR>
-nmap <leader>l :wincmd l<CR>
+nmap <leader>k :wincmd k<cr>
+nmap <leader>j :wincmd j<cr>
+nmap <leader>h :wincmd h<cr>
+nmap <leader>l :wincmd l<cr>
+nmap <leader>tn :tab sp<cr>
 
 " Switch to most recently used buffer
-nmap <leader><leader> :b#<CR>
+nmap <leader><leader> :b#<cr>
 " Search through open buffers
 nmap <leader>b :CtrlPBuffer<cr>
 
