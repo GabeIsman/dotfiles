@@ -15,10 +15,13 @@ nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gb :Gblame<cr>
+
 " Open a new file in the current directory
 nnoremap <leader>e :e %:h/
 nnoremap <leader>vs %:h/
 nnoremap <leader>sp :e %:h/
+" Create the file in single quotes relative to the current directory
+nnoremap <leader>cf vi'"ay:vsp <c-r>=simplify(expand('%:h') . "/<c-r>a")<cr><cr>
 " RSpec.vim mappings
 map <Leader>tf :call RunCurrentSpecFile()<cr>
 map <Leader>ts :call RunNearestSpec()<cr>
@@ -45,6 +48,7 @@ nnoremap <leader>vl :vert sb#<cr>
 map <leader>rt :%retab<cr>
 " Re-indent the whole file
 map <leader>= maggVG=`a
+" Split the current line after each comma
 map <leader>, :s/,/,\r/g<cr>:nohlsearch<cr>=ap<cr>
 " Repeat last command for whole file
 map <leader>a ma:%<c-r>:<cr>`a
