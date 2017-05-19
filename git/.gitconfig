@@ -1,6 +1,6 @@
 [user]
   name = Gabe Isman
-	email = gabe.isman@gmail.com
+  email = gabe.isman@gmail.com
 [color]
   ui = true
 [merge]
@@ -18,10 +18,10 @@
   st = status
   unstage = reset HEAD
   deploy = subtree push
-	ctags = !.git/hooks/ctags
+  ctags = !.git/hooks/ctags
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
 [pull]
-	rebase = true
+  rebase = true

@@ -11,8 +11,8 @@ alias st="git status -s"
 alias gdc="git diff -w --cached"
 alias glc="git log --branches --not --remotes"
 alias ci="git commit --no-edit"
-alias untrkd="git status --short | grep ^\?\? | cut -d \" \" -f 2 | xargs git add"
-alias rmuntrkd="git status --short | grep ^\?\? | cut -d \" \" -f 2 | xargs rm"
+alias untrkd="git status --short | grep '??' | cut -d ' ' -f 2 | xargs git add"
+alias rmuntrkd="git status --short | grep '??' | cut -d ' ' -f 2 | xargs rm"
 alias rb="git for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:relative)|||%(refname:short)|||%(contents:subject)' refs/heads/ | column -s '|||' -t"
 alias rmbr="git branch --merged | egrep -v \"(^\*|master)\" | xargs git branch -d"
 # Add or commit all whitespace-only changed lines
@@ -26,3 +26,6 @@ end
 
 # Common typos to ignore
 alias gut="git"
+
+# Ruby specific things
+alias be="bundle exec"
