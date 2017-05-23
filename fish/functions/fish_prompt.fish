@@ -35,6 +35,7 @@ function fish_prompt --description 'Write out the prompt'
         end
         set git_info "(git$git_status$git_branch"(set_color white)")"
     end
+    set timestamp (date "+%H:%M:%S")
     set_color -b black
     if set -q VIRTUAL_ENV
       echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
@@ -42,6 +43,8 @@ function fish_prompt --description 'Write out the prompt'
     printf '%s%s%s%s%s%s%s%s%s%s%s%s%s'\
     (set_color -o white)               \
     '❰'                                \
+    (set_color blue)                 \
+    "$timestamp "                 \
     (set_color green)                  \
     $USER                              \
     (set_color white)                  \
