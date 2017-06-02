@@ -37,12 +37,12 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 let g:vitality_fix_cursor = 0
 
 " move by visual lines rather than machine lines
-nnoremap j gj
-nnoremap k gk
+noremap j gj
+noremap k gk
 
 " move to beginning/end of line
-nnoremap B ^
-nnoremap E $
+noremap B ^
+noremap E $
 
 " jk and jj are both escape
 inoremap jk <esc>
