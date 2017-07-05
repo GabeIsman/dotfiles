@@ -53,6 +53,8 @@ map <leader>, :s/,/,\r/g<cr>:nohlsearch<cr>=ap<cr>
 " Repeat last command for whole file
 map <leader>a ma:%<c-r>:<cr>`a
 map <leader>ya maggVGy`a
+" Pop up the syntastic errors window
+map <leader>sl :Errors<cr>
 
 " Nicer code pasting
 function! PasteCode()
