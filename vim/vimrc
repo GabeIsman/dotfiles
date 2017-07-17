@@ -39,6 +39,7 @@ Plugin 'tpope/vim-rails' " Tons of features for rails projects
 Plugin 'tpope/vim-rake' " Nicer file navigation for ruby libraries
 Plugin 'tpope/vim-ragtag' " Some goodies for better tag manipulation in XML-ish documents
 Plugin 'tpope/vim-endwise' " Insert 'end' in the right spot automatically in ruby
+Plugin 'tpope/vim-unimpaired' " A variety of pair-wise key bindings
 Plugin 'thoughtbot/vim-rspec' " Lightweight integration with rspec
 Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
 Plugin 'jiangmiao/auto-pairs' " Automatically add closing pairs
