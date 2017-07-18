@@ -38,6 +38,8 @@ map <leader>ct :Tcontroller<space>
 map <leader>ms :Smodel<space>
 map <leader>mv :Vmodel<space>
 map <leader>me :Emodel<space>
+" When in a model file, go to the corresponding database schema
+nnoremap <leader>db :Eschema <c-r>=substitute(expand('%:t'), '.rb', 's', '')<cr><cr>
 " Go to the file in quotes
 map <leader>' vi'gf
 " Go to file in vertical split
