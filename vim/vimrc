@@ -34,6 +34,7 @@ Plugin 'sjl/vitality.vim'     " FocusGained,FocusLost events piped from iTerm2
 Plugin 'kana/vim-textobj-user' " Declarative API for custom text objects
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plugin 'vim-ruby/vim-ruby' " Install vim-ruby to get latest version (not bundled version)
+Plugin 'tpope/tpope-vim-abolish' " Utilities for refactoring/abbreviating/converting variations of words
 Plugin 'tpope/vim-bundler' " Integration with Gemfiles
 Plugin 'tpope/vim-rails' " Tons of features for rails projects
 Plugin 'tpope/vim-rake' " Nicer file navigation for ruby libraries
