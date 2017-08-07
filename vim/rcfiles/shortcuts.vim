@@ -66,4 +66,4 @@ function! PasteCode()
 endfunction
 
 nmap <leader>p :call PasteCode()<cr>
-
+xnoremap p pgvy " When pasting in visual mode, restore the pasted text to the unnamed register
