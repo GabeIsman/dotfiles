@@ -13,8 +13,10 @@ nmap <leader>b :CtrlPBuffer<cr>
 " CtrlP mappings
 nmap <leader>o :CtrlP<cr>
 nmap <leader>d :CtrlP <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr><cr>
+nmap <leader>t :CtrlPTag<cr>
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_extensions = ['tag', 'undo']
 
 let g:window_is_maximized = 0
 function! Maximize()
