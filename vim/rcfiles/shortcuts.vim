@@ -43,7 +43,7 @@ nnoremap <leader>db :Eschema <c-r>=substitute(expand('%:t'), '.rb', 's', '')<cr>
 " Go to the file in quotes
 map <leader>' vi'gf
 " Go to file in vertical split
-nnoremap gv :vsp <c-r>=findfile(rails#cfile())<cr><cr>
+nnoremap <leader>gv :vsp <c-r>=findfile(rails#cfile())<cr><cr>
 " Open last buffer in vertical split
 nnoremap <leader>vl :vert sb#<cr>
 " Retab the whole file
