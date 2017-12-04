@@ -28,6 +28,7 @@ set scrolloff=1    " Keep one line below/above cursor
 set wrap           " Wrap lines that are bigger than the screen
 set linebreak      " Break visual wraps at reasonable breakpoints, not at the last visible character
 set nolist         " Don't visually indicate the end of a line
+set synmaxcol=512  " Don't try to syntax highlight long single lines
 
 " Change the cursor shape based on mode
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
@@ -61,4 +62,6 @@ nnoremap <C-l> :nohlsearch<CR>
 nmap <leader>s :w<CR>
 
 colorscheme molokai
+"colorscheme mango
+"colorscheme jellybeans
 
