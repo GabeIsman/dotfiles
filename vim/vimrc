@@ -47,6 +47,7 @@ Plugin 'jiangmiao/auto-pairs' " Automatically add closing pairs
 Plugin 'SirVer/ultisnips' " Snippet engine
 Plugin 'honza/vim-snippets' " Snippet library
 Plugin 'ervandew/supertab' " Allow overloading of tab
+Plugin 'vim-scripts/YankRing.vim' " Emacs-flavored kill-ring
 
 call vundle#end()            " required
 filetype plugin indent on    " required
