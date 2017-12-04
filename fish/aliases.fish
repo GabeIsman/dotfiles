@@ -18,6 +18,7 @@ alias rmbr="git branch --merged | egrep -v \"(^\*|master)\" | xargs git branch -
 # Add or commit all whitespace-only changed lines
 alias gwa="git add -A; and git diff --cached -w | git apply --cached -R"
 alias gwc="git add -A; and git diff --cached -w | git apply --cached -R; and git commit -m Whitespace"
+alias gca="git commit --amend"
 
 # deploy a specific folder to the gh-pages branch
 function ghdeploy -d "Push a specific directory to the gh-pages branch" -a dir
