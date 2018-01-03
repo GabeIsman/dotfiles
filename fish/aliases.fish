@@ -6,7 +6,7 @@ alias pgrep="pgrep -f"
 alias ll="ls -lah"
 
 # Git shortcuts
-alias gd="git diff --patience -w"
+alias gd="git diff --patience --ignore-space-change --minimal"
 alias st="git status -s"
 alias gdc="git diff -w --cached"
 alias glc="git log --branches --not --remotes"
