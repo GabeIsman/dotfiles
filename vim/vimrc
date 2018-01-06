@@ -18,35 +18,34 @@ filetype off                  " required for Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive' " Add nice git bindings/interactions
-Plugin 'ctrlp/ctrlp.vim' " Fuzzy-finder
-Plugin 'scrooloose/nerdcommenter' " Adds easy comment toggling
-Plugin 'sheerun/vim-polyglot' " Many languages, syntax, etc.
-Plugin 'flazz/vim-colorschemes' " Colorscheme pack
-Plugin 'tpope/vim-surround' " Handle quotes, parens, tags much more easily
-Plugin 'tpope/vim-repeat'   " Make . work with vim-surround and other plugins
-Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
+Plugin 'SirVer/ultisnips' " Snippet engine
 Plugin 'Valloric/YouCompleteMe' " Auto completion
-Plugin 'scrooloose/syntastic' " Syntax checker
-Plugin 'sjl/vitality.vim'     " FocusGained,FocusLost events piped from iTerm2
+Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
+Plugin 'ctrlp/ctrlp.vim' " Fuzzy-finder
+Plugin 'ervandew/supertab' " Allow overloading of tab
+Plugin 'flazz/vim-colorschemes' " Colorscheme pack
+Plugin 'honza/vim-snippets' " Snippet library
+Plugin 'jiangmiao/auto-pairs' " Automatically add closing pairs
 Plugin 'kana/vim-textobj-user' " Declarative API for custom text objects
+Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
-Plugin 'vim-ruby/vim-ruby' " Install vim-ruby to get latest version (not bundled version)
+Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
+Plugin 'scrooloose/nerdcommenter' " Adds easy comment toggling
+Plugin 'scrooloose/syntastic' " Syntax checker
+Plugin 'sheerun/vim-polyglot' " Many languages, syntax, etc.
+Plugin 'sjl/vitality.vim'     " FocusGained,FocusLost events piped from iTerm2
+Plugin 'thoughtbot/vim-rspec' " Lightweight integration with rspec
 Plugin 'tpope/tpope-vim-abolish' " Utilities for refactoring/abbreviating/converting variations of words
 Plugin 'tpope/vim-bundler' " Integration with Gemfiles
+Plugin 'tpope/vim-endwise' " Insert 'end' in the right spot automatically in ruby
+Plugin 'tpope/vim-fugitive' " Add nice git bindings/interactions
+Plugin 'tpope/vim-ragtag' " Some goodies for better tag manipulation in XML-ish documents
 Plugin 'tpope/vim-rails' " Tons of features for rails projects
 Plugin 'tpope/vim-rake' " Nicer file navigation for ruby libraries
-Plugin 'tpope/vim-ragtag' " Some goodies for better tag manipulation in XML-ish documents
-Plugin 'tpope/vim-endwise' " Insert 'end' in the right spot automatically in ruby
+Plugin 'tpope/vim-repeat'   " Make . work with vim-surround and other plugins
+Plugin 'tpope/vim-surround' " Handle quotes, parens, tags much more easily
 Plugin 'tpope/vim-unimpaired' " A variety of pair-wise key bindings
-Plugin 'thoughtbot/vim-rspec' " Lightweight integration with rspec
-Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
-Plugin 'jiangmiao/auto-pairs' " Automatically add closing pairs
-Plugin 'SirVer/ultisnips' " Snippet engine
-Plugin 'honza/vim-snippets' " Snippet library
-Plugin 'ervandew/supertab' " Allow overloading of tab
+Plugin 'vim-ruby/vim-ruby' " Install vim-ruby to get latest version (not bundled version)
 Plugin 'vim-scripts/YankRing.vim' " Emacs-flavored kill-ring
 
 call vundle#end()            " required
