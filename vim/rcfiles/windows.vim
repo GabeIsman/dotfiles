@@ -12,6 +12,8 @@ nmap <leader>b :CtrlPBuffer<cr>
 
 " CtrlP mappings
 nmap <leader>o :CtrlP<cr>
+" Hack to get around my keyboard suddenly giving up on the function keys
+nmap <leader>ro :CtrlPClearCache<cr>:CtrlP<cr>
 nmap <leader>d :CtrlP <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr><cr>
 nmap <leader>t :CtrlPTag<cr>
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
