@@ -17,8 +17,10 @@ nmap <leader>ro :CtrlPClearCache<cr>:CtrlP<cr>
 nmap <leader>d :CtrlP <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr><cr>
 nmap <leader>t :CtrlPTag<cr>
 " Make CtrlP use ag for listing the files. Way faster and no useless files.
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_user_command = 'ag %s --files-with-matches --nocolor --hidden --skip-vcs-ignores -g ""'
 let g:ctrlp_extensions = ['tag', 'undo']
+" ag is fast enough that CtrlP doesn't need to cache
+let g:ctrlp_use_caching = 0
 
 let g:window_is_maximized = 0
 function! Maximize()

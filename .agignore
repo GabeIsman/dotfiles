@@ -1,0 +1,20 @@
+# Ignore git directories
+.git/
+
+# Ignore 3rd-party modules
+node_modules/
+vim/bundle
+
+# Ignore Jupyter files
+.Rhistory
+.ipynb_checkpoints
+
+# Ignore specific logs
+npm-debug.log
+
+# Ignore cache files
+tmp/
+.sass-cache/
+
+# Ignore OS-level garbage
+.DS_Store
