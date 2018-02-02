@@ -5,6 +5,9 @@ alias pkill="pkill -f"
 alias pgrep="pgrep -f"
 alias ll="ls -lah"
 
+# File manipulation
+alias lowerfiles="ls | sed -n 's/.*/mv \"&\" \$(tr \"[A-Z]\" \"[a-z]\" <<< \"&\")/p' | bash"
+
 # Git shortcuts
 alias gd="git diff --patience --ignore-space-change --minimal"
 alias st="git status -s"
