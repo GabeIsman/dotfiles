@@ -26,6 +26,7 @@ Plugin 'cohama/lexima.vim'
 Plugin 'ctrlp/ctrlp.vim' " Fuzzy-finder
 Plugin 'ervandew/supertab' " Allow overloading of tab
 Plugin 'flazz/vim-colorschemes' " Colorscheme pack
+Plugin 'glts/vim-textobj-comment' " Define a comment text object using textobj-user
 Plugin 'honza/vim-snippets' " Snippet library
 "Plugin 'jiangmiao/auto-pairs' " Automatically add closing pairs
 Plugin 'kana/vim-textobj-user' " Declarative API for custom text objects
