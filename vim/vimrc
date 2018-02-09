@@ -28,7 +28,6 @@ Plugin 'ervandew/supertab' " Allow overloading of tab
 Plugin 'flazz/vim-colorschemes' " Colorscheme pack
 Plugin 'glts/vim-textobj-comment' " Define a comment text object using textobj-user
 Plugin 'honza/vim-snippets' " Snippet library
-"Plugin 'jiangmiao/auto-pairs' " Automatically add closing pairs
 Plugin 'kana/vim-textobj-user' " Declarative API for custom text objects
 Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
@@ -40,7 +39,6 @@ Plugin 'sjl/vitality.vim'     " FocusGained,FocusLost events piped from iTerm2
 Plugin 'thoughtbot/vim-rspec' " Lightweight integration with rspec
 Plugin 'tpope/tpope-vim-abolish' " Utilities for refactoring/abbreviating/converting variations of words
 Plugin 'tpope/vim-bundler' " Integration with Gemfiles
-"Plugin 'tpope/vim-endwise' " Insert 'end' in the right spot automatically in ruby
 Plugin 'tpope/vim-fugitive' " Add nice git bindings/interactions
 Plugin 'tpope/vim-ragtag' " Some goodies for better tag manipulation in XML-ish documents
 Plugin 'tpope/vim-rails' " Tons of features for rails projects
