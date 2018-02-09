@@ -23,6 +23,11 @@ alias gwa="git add -A; and git diff --cached -w | git apply --cached -R"
 alias gwc="git add -A; and git diff --cached -w | git apply --cached -R; and git commit -m Whitespace"
 alias gca="git commit --amend"
 
+# Create a new TMP graphic
+function newgraphic -d "Create a new TMP Graphic in directory" -a dir
+  git clone git@github.com:themarshallproject/gfx-v2.git $dir; cd $dir; sh ./setup.sh
+end
+
 # deploy a specific folder to the gh-pages branch
 function ghdeploy -d "Push a specific directory to the gh-pages branch" -a dir
   git subtree push --prefix $dir origin gh-pages
