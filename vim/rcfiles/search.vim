@@ -21,6 +21,8 @@ nnoremap <leader>rw :%s/\<<c-r><c-w>\>//gc<left><left><left>
 nnoremap <leader>rl :s/\<<c-r><c-w>\>//g<left><left>
 " Replace the rest of the word on the whole line
 nnoremap <leader>re ye:s/<c-r>"//g<left><left>
+" Replace the current search pattern in the whole file
+nnoremap <leader>rs :%s/<c-r>///g<left><left>
 " Replace the visual selection on the current line
 vnoremap <leader>rv y:s/<c-r>"//g<left><left>
 " Replace the visual selection in the whole file
