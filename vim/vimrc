@@ -21,8 +21,8 @@ call vundle#begin()
 Plugin 'SirVer/ultisnips' " Snippet engine
 Plugin 'Valloric/YouCompleteMe' " Auto completion
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
-Plugin 'alvan/vim-closetag'
-Plugin 'cohama/lexima.vim'
+Plugin 'alvan/vim-closetag' " Auto-insert closing tag
+Plugin 'cohama/lexima.vim' " Auto matching pairs
 Plugin 'ctrlp/ctrlp.vim' " Fuzzy-finder
 Plugin 'ervandew/supertab' " Allow overloading of tab
 Plugin 'flazz/vim-colorschemes' " Colorscheme pack
