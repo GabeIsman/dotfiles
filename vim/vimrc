@@ -33,13 +33,13 @@ Plugin 'kana/vim-textobj-user' " Declarative API for custom text objects
 Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
-Plugin 'scrooloose/nerdcommenter' " Adds easy comment toggling
 Plugin 'scrooloose/syntastic' " Syntax checker
 Plugin 'sheerun/vim-polyglot' " Many languages, syntax, etc.
 Plugin 'sjl/vitality.vim'     " FocusGained,FocusLost events piped from iTerm2
 Plugin 'thoughtbot/vim-rspec' " Lightweight integration with rspec
 Plugin 'tpope/tpope-vim-abolish' " Utilities for refactoring/abbreviating/converting variations of words
 Plugin 'tpope/vim-bundler' " Integration with Gemfiles
+Plugin 'tpope/vim-commentary' " Adds easy comment toggling
 Plugin 'tpope/vim-fugitive' " Add nice git bindings/interactions
 Plugin 'tpope/vim-ragtag' " Some goodies for better tag manipulation in XML-ish documents
 Plugin 'tpope/vim-rails' " Tons of features for rails projects
