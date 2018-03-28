@@ -1,6 +1,6 @@
 [user]
-  name = Gabe Isman
-  email = gabe.isman@gmail.com
+	name = Gabe Isman
+	email = gabe.isman@gmail.com
 [color]
   ui = true
 [merge]
@@ -27,3 +27,8 @@
   rebase = true
 [diff]
   algorithm = patience
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
