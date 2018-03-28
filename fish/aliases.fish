@@ -4,6 +4,8 @@ alias addalias="$EDITOR ~/.config/fish/aliases.fish; and source ~/.config/fish/a
 alias pkill="pkill -f"
 alias pgrep="pgrep -f"
 alias ll="ls -lah"
+alias ..="cd .."
+alias ....="cd ../.."
 
 # File manipulation
 alias lowerfiles="ls | sed -n 's/.*/mv \"&\" \$(tr \"[A-Z]\" \"[a-z]\" <<< \"&\")/p' | bash"
