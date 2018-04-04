@@ -29,5 +29,6 @@ vnoremap <leader>rv y:s/<c-r>"//g<left><left>
 vnoremap <leader>ra y:%s/<c-r>"//g<left><left>
 
 " Search for the visual selection
-vnoremap / y/<c-r>"<cr>
+vnoremap / "vy/<c-r>v<cr>
+vnoremap ? "vy?<c-r>v<cr>
 
