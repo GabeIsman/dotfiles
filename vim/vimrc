@@ -24,7 +24,7 @@ Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'airblade/vim-gitgutter' " Show status gutter
 Plugin 'alvan/vim-closetag' " Auto-insert closing tag
 Plugin 'cohama/lexima.vim' " Auto matching pairs
-Plugin 'ctrlp/ctrlp.vim' " Fuzzy-finder
+Plugin 'ctrlpvim/ctrlp.vim' " Fuzzy-finder
 Plugin 'ervandew/supertab' " Allow overloading of tab
 Plugin 'flazz/vim-colorschemes' " Colorscheme pack
 Plugin 'glts/vim-textobj-comment' " Define a comment text object using textobj-user
