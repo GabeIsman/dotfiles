@@ -47,6 +47,7 @@ Plugin 'tpope/vim-ragtag' " Some goodies for better tag manipulation in XML-ish 
 Plugin 'tpope/vim-rails' " Tons of features for rails projects
 Plugin 'tpope/vim-rake' " Nicer file navigation for ruby libraries
 Plugin 'tpope/vim-repeat'   " Make . work with vim-surround and other plugins
+Plugin 'tpope/vim-rhubarb' " Enable :Gbrowse
 Plugin 'tpope/vim-surround' " Handle quotes, parens, tags much more easily
 Plugin 'tpope/vim-unimpaired' " A variety of pair-wise key bindings
 Plugin 'vim-ruby/vim-ruby' " Install vim-ruby to get latest version (not bundled version)
