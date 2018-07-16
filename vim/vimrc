@@ -31,6 +31,7 @@ Plugin 'flazz/vim-colorschemes' " Colorscheme pack
 Plugin 'glts/vim-textobj-comment' " Define a comment text object using textobj-user
 Plugin 'honza/vim-snippets' " Snippet library
 Plugin 'kana/vim-textobj-user' " Declarative API for custom text objects
+Plugin 'kana/vim-textobj-line' " Custom line text object
 Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
