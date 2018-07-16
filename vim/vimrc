@@ -32,6 +32,7 @@ Plugin 'glts/vim-textobj-comment' " Define a comment text object using textobj-u
 Plugin 'honza/vim-snippets' " Snippet library
 Plugin 'kana/vim-textobj-user' " Declarative API for custom text objects
 Plugin 'kana/vim-textobj-line' " Custom line text object
+Plugin 'lepture/vim-jinja' " Jinja/Nunjucks syntax highlighting/indenting
 Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
