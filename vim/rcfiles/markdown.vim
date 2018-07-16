@@ -1,3 +1,6 @@
+" The new list regex gets tripped by the TODO syntax, so rm the indent
+let g:vim_markdown_new_list_item_indent = 0
+
 " Simple todo function
 nnoremap <leader>tt :ToggleCompletion<cr>
 
