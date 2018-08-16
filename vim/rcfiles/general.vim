@@ -36,34 +36,9 @@ set regexpengine=1
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
 " Tell vitality not to bother, since we just did it.
 let g:vitality_fix_cursor = 0
 
-" move by visual lines rather than machine lines
-noremap j gj
-noremap k gk
 
-" move to beginning/end of line
-noremap B ^
-noremap E $
-
-" jk and jj are both escape
-inoremap jk <esc>
-inoremap jj <esc>
-
-" Map control movements to arrow keys in insert
-inoremap <c-j> <down>
-inoremap <c-h> <left>
-inoremap <c-l> <right>
-inoremap <c-k> <up>
-
-" remove search highlights
-nnoremap <C-l> :nohlsearch<CR>
-
-" Write current buffer
-nmap <leader>s :w<CR>
-
-colorscheme molokai
-"colorscheme mango
-"colorscheme jellybeans
 

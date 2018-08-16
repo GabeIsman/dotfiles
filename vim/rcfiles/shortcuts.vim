@@ -1,3 +1,29 @@
+" Remappings of basic things
+
+" move by visual lines rather than machine lines
+noremap j gj
+noremap k gk
+
+" move to beginning/end of line
+noremap B ^
+noremap E $
+
+" jk and jj are both escape
+inoremap jk <esc>
+inoremap jj <esc>
+
+" Map control movements to arrow keys in insert
+inoremap <c-j> <down>
+inoremap <c-h> <left>
+inoremap <c-l> <right>
+inoremap <c-k> <up>
+
+" remove search highlights
+nnoremap <C-l> :nohlsearch<CR>
+
+" bind control-j to reverse of shift-j
+nnoremap <c-j> kJ
+
 " Leader mappings for commonly used tasks
 
 " Open project notes
