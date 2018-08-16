@@ -57,12 +57,12 @@ function fish_prompt --description 'Write out the prompt'
     '❱'                                \
     (set_color white)
     if test $laststatus -eq 0
-        printf "%s✔%s≻%s "  \
+        printf "%s✔%s\n>%s "  \
         (set_color -o green)\
         (set_color white)   \
         (set_color normal)
     else
-        printf "%s✘%s≻%s "  \
+        printf "%s✘%s\n>%s "  \
         (set_color -o red)  \
         (set_color white)   \
         (set_color normal)
