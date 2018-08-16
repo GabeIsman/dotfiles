@@ -26,6 +26,8 @@ nnoremap <c-j> kJ
 
 " Leader mappings for commonly used tasks
 
+" Write current buffer
+nmap <leader>s :w<CR>
 " Open project notes
 nnoremap <leader>en :tabnew NOTES.md<cr>
 " Open scratch file with the same extension
