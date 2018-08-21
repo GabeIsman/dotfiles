@@ -21,9 +21,6 @@ inoremap <c-k> <up>
 " remove search highlights
 nnoremap <C-l> :nohlsearch<CR>
 
-" bind control-j to reverse of shift-j
-nnoremap <c-j> kJ
-
 " Leader mappings for commonly used tasks
 
 " Write current buffer
