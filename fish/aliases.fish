@@ -24,6 +24,8 @@ alias rmbr="git branch --merged | egrep -v \"(^\*|master)\" | xargs git branch -
 alias gwa="git add -A; and git diff --cached -w | git apply --cached -R"
 alias gwc="git add -A; and git diff --cached -w | git apply --cached -R; and git commit -m Whitespace"
 alias gca="git commit --amend"
+alias gs="git stash"
+alias gsp="git stash pop"
 
 # Create a new TMP graphic
 function newgraphic -d "Create a new TMP Graphic in directory" -a dir
