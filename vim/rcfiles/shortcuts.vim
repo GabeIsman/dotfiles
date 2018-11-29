@@ -19,7 +19,7 @@ inoremap <c-l> <right>
 inoremap <c-k> <up>
 
 " remove search highlights
-nnoremap <C-l> :nohlsearch<CR>
+nnoremap <leader>l :nohlsearch<CR>
 
 " Leader mappings for commonly used tasks
 
@@ -93,4 +93,4 @@ function! PasteCode()
 endfunction
 
 nmap <leader>p :call PasteCode()<cr>
-xnoremap p pgvy " When pasting in visual mode, restore the pasted text to the unnamed register
+vnoremap p pgvy " When pasting in visual mode, restore the pasted text to the unnamed register

@@ -1,8 +1,9 @@
 " Window movement commands
-nmap <leader>k :wincmd k<cr>
-nmap <leader>j :wincmd j<cr>
-nmap <leader>h :wincmd h<cr>
-nmap <leader>l :wincmd l<cr>
+nmap <c-k> :wincmd k<cr>
+nmap <c-j> :wincmd j<cr>
+nmap <c-h> :wincmd h<cr>
+nmap <c-l> :wincmd l<cr>
+
 nmap <leader>tn :call Maximize()<cr>
 
 " Switch to most recently used buffer
