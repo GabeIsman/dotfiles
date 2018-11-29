@@ -11,6 +11,7 @@ nnoremap gR :Ack '\b<cword>\b' *<CR>
 
 nnoremap <leader>fp :Ack<space>
 vnoremap <leader>fv y:Ack<space><c-r>"<cr>
+nnoremap <leader>f/ y:Ack<space><c-r>/<cr>
 
 " Replace current word (not necessarily word-bounded) in whole file, with
 " confirm
