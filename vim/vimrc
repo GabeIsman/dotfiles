@@ -38,6 +38,7 @@ Plugin 'lepture/vim-jinja'              " Jinja/Nunjucks syntax highlighting/ind
 Plugin 'mileszs/ack.vim'                " Enable ack/ag for searching
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
+Plugin 'plasticboy/vim-markdown'        " Syntax highlighting and nice code folding for Markdown
 Plugin 'scrooloose/syntastic'           " Syntax checker
 Plugin 'sheerun/vim-polyglot'           " Many languages, syntax, etc.
 Plugin 'sjl/vitality.vim'               " FocusGained,FocusLost events piped from iTerm2
