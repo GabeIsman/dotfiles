@@ -16,6 +16,7 @@ endfunction
 filetype off                  " required for Vundle
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/usr/local/opt/fzf
 call vundle#begin()
 
 Plugin 'SirVer/ultisnips' " Snippet engine
@@ -25,7 +26,6 @@ Plugin 'airblade/vim-gitgutter' " Show status gutter
 Plugin 'alvan/vim-closetag' " Auto-insert closing tag
 Plugin 'chaoren/vim-wordmotion' " More granular word motions for camel and snake case
 Plugin 'cohama/lexima.vim' " Auto matching pairs
-Plugin 'ctrlpvim/ctrlp.vim' " Fuzzy-finder
 Plugin 'ervandew/supertab' " Allow overloading of tab
 Plugin 'flazz/vim-colorschemes' " Colorscheme pack
 Plugin 'glts/vim-textobj-comment' " Define a comment text object using textobj-user
@@ -34,6 +34,7 @@ Plugin 'kana/vim-textobj-user' " Declarative API for custom text objects
 Plugin 'kana/vim-textobj-line' " Custom line text object
 Plugin 'lepture/vim-jinja' " Jinja/Nunjucks syntax highlighting/indenting
 Plugin 'mileszs/ack.vim' " Enable ack/ag for searching
+Plugin 'junegunn/fzf.vim'               " Fuzzy-finder
 Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
 Plugin 'scrooloose/syntastic' " Syntax checker
