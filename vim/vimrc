@@ -42,6 +42,8 @@ Plugin 'sheerun/vim-polyglot'           " Many languages, syntax, etc.
 Plugin 'sjl/vitality.vim'               " FocusGained,FocusLost events piped from iTerm2
 Plugin 'thoughtbot/vim-rspec'           " Lightweight integration with rspec
 Plugin 'tpope/tpope-vim-abolish'        " Utilities for refactoring/abbreviating/converting variations of words
+Plugin 'vim-airline/vim-airline'        " Fancy statusline
+Plugin 'vim-airline/vim-airline-themes' " Align the colors of said fancy statusline for a few themese
 Plugin 'tpope/vim-bundler'              " Integration with Gemfiles
 Plugin 'tpope/vim-commentary'           " Adds easy comment toggling
 Plugin 'tpope/vim-fugitive'             " Add nice git bindings/interactions
