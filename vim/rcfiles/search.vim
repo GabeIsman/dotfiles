@@ -28,8 +28,9 @@ nnoremap <leader>rs :%s/<c-r>///g<left><left>
 vnoremap <leader>rv y:s/<c-r>"//g<left><left>
 " Replace the visual selection in the whole file
 vnoremap <leader>ra y:%s/<c-r>"//g<left><left>
+" Replace current search buffer in whole file, with confirm
+nnoremap <leader>r/ :%s/\<<c-r>/\>//gc<left><left><left>
 
 " Search for the visual selection
 vnoremap / "vy/<c-r>v<cr>
 vnoremap ? "vy?<c-r>v<cr>
-
