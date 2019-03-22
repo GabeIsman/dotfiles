@@ -29,8 +29,8 @@ nmap <leader>s :w<CR>
 nnoremap <leader>en :tabnew NOTES.md<cr>
 " Open scratch file with the same extension
 nnoremap <leader>es :vsp scratch.<c-r>=simplify(expand('%:e'))<cr><cr>
-" Open netrw at the current file's directory
-nnoremap <leader>ex :Explore<cr>
+" Open NERDTree at the current file's directory
+nnoremap <leader>ex :NERDTreeFind<cr>
 " Repeat the last command, @: is a little awkward
 nnoremap <leader>. @:
 " Redraw
