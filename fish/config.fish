@@ -41,3 +41,6 @@ eval (python -m virtualfish compat_aliases)
 # Load rbenv and set up path
 set PATH /Users/admin/.rbenv/shims $PATH
 status --is-interactive; and . (rbenv init -|psub)
+
+# Override fzf default command
+export FZF_DEFAULT_COMMAND='rg --files'

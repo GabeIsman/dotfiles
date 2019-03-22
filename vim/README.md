@@ -18,6 +18,7 @@ git clone this repo
 ln -s dotfiles/vim ~/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 brew install fzf
+brew install ripgrep
 vim +PluginInstall +qall
 npm install -g typescript
 ~/.vim/bundle/YouCompleteMe/install.py
