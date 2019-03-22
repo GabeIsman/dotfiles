@@ -6,6 +6,8 @@ endif
 set ignorecase
 set smartcase
 
+set tags=.git/tags
+
 nnoremap gr :Ack <cword><cr>
 nnoremap gR :Ack '\b<cword>\b' *<CR>
 
