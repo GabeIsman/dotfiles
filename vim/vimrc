@@ -50,6 +50,7 @@ Plugin 'vim-airline/vim-airline-themes' " Align the colors of said fancy statusl
 Plugin 'terryma/vim-multiple-cursors'   " Multiple cursors, Sublime style
 Plugin 'tpope/vim-bundler'              " Integration with Gemfiles
 Plugin 'tpope/vim-commentary'           " Adds easy comment toggling
+Plugin 'tpope/vim-eunuch'               " Adds some basic unix commands
 Plugin 'tpope/vim-fugitive'             " Add nice git bindings/interactions
 Plugin 'tpope/vim-ragtag'               " Some goodies for better tag manipulation in XML-ish documents
 Plugin 'tpope/vim-rails'                " Tons of features for rails projects
