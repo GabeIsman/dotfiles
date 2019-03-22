@@ -11,9 +11,10 @@ set tags=.git/tags
 nnoremap gr :Ack <cword><cr>
 nnoremap gR :Ack '\b<cword>\b' *<CR>
 
+" Full project searches
 nnoremap <leader>fp :Ack<space>
 vnoremap <leader>fv y:Ack<space><c-r>"<cr>
-nnoremap <leader>f/ y:Ack<space><c-r>/<cr>
+nnoremap <leader>f/ :Ack<space><c-r>/<cr>
 
 " Replace current word (not necessarily word-bounded) in whole file, with
 " confirm
