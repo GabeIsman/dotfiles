@@ -15,6 +15,13 @@ nmap <leader>p :Files <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr><cr>
 nmap <leader>t :Tags<cr>
 nmap <leader>b :Buffers<cr>
 
+" FZF control keys
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
 let g:window_is_maximized = 0
 function! Maximize()
     if g:window_is_maximized
