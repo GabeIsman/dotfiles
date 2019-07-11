@@ -75,6 +75,7 @@ map <leader>' vi'gf
 nnoremap <leader>gv :vsp <c-r>=findfile(rails#cfile())<cr><cr>
 " Open last buffer in vertical split
 nnoremap <leader>vl :vert sb#<cr>
+nnoremap <leader>vs :sp sb#<cr>
 " Retab the whole file
 map <leader>rt :%retab<cr>
 " Re-indent the whole file
