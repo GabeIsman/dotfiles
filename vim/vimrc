@@ -28,7 +28,7 @@ Plugin 'chaoren/vim-wordmotion'         " More granular word motions for camel a
 Plugin 'chrisbra/csv.vim'               " CSV tools
 Plugin 'cohama/lexima.vim'              " Auto matching pairs
 Plugin 'ervandew/supertab'              " Allow overloading of tab
-Plugin 'flazz/vim-colorschemes'         " Colorscheme pack
+Plugin 'nanotech/jellybeans.vim'        " Great colorscheme
 Plugin 'glts/vim-textobj-comment'       " Define a comment text object using textobj-user
 Plugin 'honza/vim-snippets'             " Snippet library
 Plugin 'junegunn/fzf.vim'               " Fuzzy-finder
