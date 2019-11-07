@@ -3,8 +3,6 @@ nmap <c-k> :wincmd k<cr>
 nmap <c-j> :wincmd j<cr>
 nmap <c-h> :wincmd h<cr>
 nmap <c-l> :wincmd l<cr>
-nmap <c-t> :wincmd t<cr>
-nmap <c-b> :wincmd b<cr>
 
 nmap <leader>tn :call Maximize()<cr>
 
