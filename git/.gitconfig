@@ -19,6 +19,7 @@
   unstage = reset HEAD
   deploy = subtree push
   ctags = !.git/hooks/ctags
+  undo = reset --soft HEAD^
 [core]
   excludesfile = ~/.gitignore
 [init]
