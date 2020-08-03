@@ -52,6 +52,7 @@ Plugin 'tpope/vim-bundler'              " Integration with Gemfiles
 Plugin 'tpope/vim-commentary'           " Adds easy comment toggling
 Plugin 'tpope/vim-eunuch'               " Adds some basic unix commands
 Plugin 'tpope/vim-fugitive'             " Add nice git bindings/interactions
+Plugin 'tpope/vim-obsession'            " Nicer session handling
 Plugin 'tpope/vim-ragtag'               " Some goodies for better tag manipulation in XML-ish documents
 Plugin 'tpope/vim-rails'                " Tons of features for rails projects
 Plugin 'tpope/vim-rake'                 " Nicer file navigation for ruby libraries
