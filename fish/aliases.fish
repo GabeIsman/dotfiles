@@ -39,6 +39,12 @@ function ghdeploy -d "Push a specific directory to the gh-pages branch" -a dir
   git subtree push --prefix $dir origin gh-pages
 end
 
+# checkout a PR into a branch, and switch to branch
+function copr -d "Checkout a PR into a branch. Takes the GH PR ID as an argument." -a id
+  git fetch origin pull/$id/head:pull-$id
+  git co pull-$id
+end
+
 # Common typos to ignore
 alias gut="git"
 
