@@ -94,4 +94,14 @@ function! PasteCode()
 endfunction
 
 nmap <leader>p :call PasteCode()<cr>
-vnoremap p pgvy " When pasting in visual mode, restore the pasted text to the unnamed register
+" xnoremap p qgvy " When pasting in visual mode, restore the pasted text to the unnamed register
+
+" Leave cursor at end of yanked text in visual mode
+xnoremap y y`>
+" Leave cursor at end of pasted text
+nnoremap p p`]
+
+" Always reuse substitute flags when re-running an :s command
+nnoremap & :&&<cr>
+" Visual mode equivalent of re-running substituted command
+xnoremap & :&&<cr>
