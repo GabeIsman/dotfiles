@@ -27,6 +27,7 @@ alias gca="git commit --amend"
 alias gs="git stash"
 alias gsp="git stash pop"
 alias gcp="git cherry-pick"
+alias gap="git add -p"
 
 # Create a new TMP graphic
 function newgraphic -d "Create a new TMP Graphic in directory" -a dir
