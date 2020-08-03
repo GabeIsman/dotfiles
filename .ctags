@@ -1,0 +1,66 @@
+--langdef=css
+--langmap=css:.css
+--langmap=css:+.less
+--langmap=css:+.styl
+--langmap=css:+.scss
+--langmap=css:+.sass
+--regex-css=/^[ \t]*@mixin ([A-Za-z0-9_-]+)/\1/m,mixin,mixins/
+--regex-css=/^[ \t]*\$([A-Za-z0-9_-]+)/\1/v,variable,variables/
+--regex-css=/^([A-Za-z0-9_-]*)*\.([A-Za-z0-9_-]+) *[,{]/\2/c,class,classes/
+--regex-css=/^[ \t&]+\.([A-Za-z0-9_-]+) *[,{]/\1/c,class,classes/
+--regex-css=/^(.*)*\#([A-Za-z0-9_-]+) *[,{]/\2/i,id,ids/
+--regex-css=/^[ \t&]*#([A-Za-z0-9_-]+)/\1/i,id,ids/
+--regex-css=/(^([A-Za-z0-9_-])*([A-Za-z0-9_-]+)) *[,|\{]/\1/t,tag,tags/
+--regex-css=/(^([^\/\/])*)[ \t]+([A-Za-z0-9_-]+)) *[,|\{]/\3/t,tag,tags/
+--regex-css=/(^(.*, *)([A-Za-z0-9_-]+)) *[,|\{]/\3/t,tag,tags/
+--regex-css=/(^[ \t]+([A-Za-z0-9_-]+)) *[,|\{]/\1/t,tag,tags/
+--regex-css=/^[ \t]*@media\s+([A-Za-z0-9_-]+)/\1/d,media,media/
+--regex-css=/\/\/[ \t]*(FIXME|TODO)[ \t]*\:*(.*)/\1/T,Tag,Tags/
+
+--regex-html=/id="([A-Za-z0-9_-]+)"/\1/i,id,ids/
+--regex-html=/class="([A-Za-z0-9_-]+)"/\1/c,class,classes/
+
+--langdef=markdown
+--langmap=markdown:.md
+--regex-markdown=/^(#+[ \t]+.*)/\1/h,heading,headings/
+
+--langmap=vim:+(vimrc)
+
+--langdef=json
+--langmap=json:.json
+--regex-json=/^[ \t]*"(.*)":/\1/k,key,keys/
+
+--langdef=yaml
+--langmap=yaml:.yml.yaml
+--regex-yaml=/^[ \t]*(.*):/\1/k,key,keys/
+
+--langdef=dockerfile
+--langmap=dockerfile:+(Dockerfile)
+--regex-dockerfile=/^(FROM|MAINTAINER|RUN|CMD|LABEL|EXPOSE|ENV|ADD|COPY|ENTRYPOINT|VOLUME|USER|WORKDIR|ARG|ONBUILD|STOPSIGNAL|HEALTHCHECK|SHELL)/\1/d,dockerfile,dockerfiles/
+
+--exclude=*.min.*
+--exclude=*.spec.*
+--exclude=*.test.*
+--exclude=*.tar.*
+--exclude=.*bundle.*
+--exclude=.cache
+--exclude=.class
+--exclude=.csproj
+--exclude=.csproj.user
+--exclude=.dll
+--exclude=.map
+--exclude=.pdb
+--exclude=.pyc
+--exclude=.sln
+--exclude=.swp
+--exclude=.tmp
+--exclude=coverage
+--exclude=dist
+--exclude=min
+--exclude=tags
+--exclude=test
+--exclude=tests
+--exclude=vendor
+--exclude=package-lock.json
+--exclude=node_modules
+--exclude=bower_components
