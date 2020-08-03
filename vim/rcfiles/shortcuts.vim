@@ -3,10 +3,8 @@
 " move by visual lines rather than machine lines
 noremap j gj
 noremap k gk
-
-" move to beginning/end of line
-noremap B ^
-noremap E $
+noremap gj j
+noremap gk k
 
 " jk and jj are both escape
 inoremap jk <esc>
