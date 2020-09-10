@@ -16,6 +16,8 @@ inoremap <c-h> <left>
 inoremap <c-l> <right>
 inoremap <c-k> <up>
 
+nnoremap <c-i> o<esc>
+
 " remove search highlights
 nnoremap <leader>l :nohlsearch<CR>
 
