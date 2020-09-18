@@ -29,6 +29,8 @@ end
 
 # Move /usr/local/bin ahead of /usr/bin to allow overriding system binaries
 set PATH /usr/local/bin $PATH
+# Add upgraded curl
+set PATH /usr/local/opt/curl/bin $PATH
 
 # Virtualfish
 export VIRTUALFISH_HOME=$HOME/Envs
