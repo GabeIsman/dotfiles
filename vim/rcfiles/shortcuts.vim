@@ -48,7 +48,7 @@ nnoremap <leader>e :e %:h/
 nnoremap <leader>vs %:h/
 nnoremap <leader>sp :e %:h/
 " Create the file in single quotes relative to the current directory
-nnoremap <leader>cf vi'"ay:vsp <c-r>=simplify(expand('%:h') . "/<c-r>a")<cr><cr>
+nnoremap <leader>cf "ayi':vsp <c-r>=simplify(expand('%:h') . "/<c-r>a")<cr><cr>
 " Delete the current file
 nnoremap <leader>rm :call delete(expand('%')) \| bdelete!<CR>
 " RSpec.vim mappings
