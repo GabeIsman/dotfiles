@@ -1,0 +1,31 @@
+{
+  "title": "Slack modifications",
+  "rules": [
+    {
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": ["left_control"],
+              "optional": ["caps_lock"]
+            }
+          },
+          "to": {
+            "key_code": "up_arrow",
+            "modifiers": ["left_option", "left_shift"]
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.tinyspeck\\.slackmacgap$"]
+            }
+          ],
+          "description": "Remap control+j to next unread conversation"
+        }
+      ]
+    }
+  ]
+}
+

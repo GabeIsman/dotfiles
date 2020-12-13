@@ -62,6 +62,7 @@ Plugin 'tpope/vim-surround'             " Handle quotes, parens, tags much more 
 Plugin 'tpope/vim-unimpaired'           " A variety of pair-wise key bindings
 Plugin 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (not bundled version)
 Plugin 'vim-scripts/YankRing.vim'       " Emacs-flavored kill-ring
+Plugin 'rizzatti/dash.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
