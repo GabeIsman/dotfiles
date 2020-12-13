@@ -39,6 +39,3 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " Tell vitality not to bother, since we just did it.
 let g:vitality_fix_cursor = 0
-
-
-
