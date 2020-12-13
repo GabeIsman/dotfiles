@@ -10,13 +10,38 @@ noremap gk k
 inoremap jk <esc>
 inoremap jj <esc>
 
+" H K L J should move the cursor
+nnoremap J <C-d>
+vnoremap J <C-d>
+onoremap J <C-d>
+nnoremap K <C-U>
+xnoremap K <C-U>
+nnoremap K <C-U>
+noremap H ^
+onoremap H ^
+noremap L g$
+
+" Since we're mapping over join, lets call it merge
+noremap M J
+
+" Redo
+nnoremap U <C-r>
+
 " Map control movements to arrow keys in insert
 inoremap <c-j> <down>
 inoremap <c-h> <left>
 inoremap <c-l> <right>
 inoremap <c-k> <up>
 
-nnoremap <c-i> o<esc>
+" Leave cursor at end of yanked text in visual mode
+xnoremap y y`>
+" Leave cursor at end of pasted text
+nnoremap p p`]
+
+" Always reuse substitute flags when re-running an :s command
+nnoremap & :&&<cr>
+" Visual mode equivalent of re-running substituted command
+xnoremap & :&&<cr>
 
 " remove search highlights
 nnoremap <leader>l :nohlsearch<CR>
@@ -98,12 +123,3 @@ endfunction
 nmap <leader>p :call PasteCode()<cr>
 " xnoremap p qgvy " When pasting in visual mode, restore the pasted text to the unnamed register
 
-" Leave cursor at end of yanked text in visual mode
-xnoremap y y`>
-" Leave cursor at end of pasted text
-nnoremap p p`]
-
-" Always reuse substitute flags when re-running an :s command
-nnoremap & :&&<cr>
-" Visual mode equivalent of re-running substituted command
-xnoremap & :&&<cr>
