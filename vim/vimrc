@@ -69,3 +69,6 @@ filetype plugin indent on    " required
 runtime macros/matchit.vim
 
 call s:SourceConfigFilesIn('rcfiles')
+
+" Allow for local overrides
+silent! source .vimlocal
