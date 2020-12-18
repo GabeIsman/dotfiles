@@ -13,11 +13,16 @@ if test -d $POSTGRES_PATH
   set PATH $PATH $POSTGRES_PATH
 end
 
-# Setting PATH for Python 3.5
-# The orginal version is saved in .bash_profile.pysave
-set PYTHON3_PATH /Library/Frameworks/Python.framework/Versions/3.5/bin
+# Setting PATH for homebrew installed python3
+set PYTHON3_PATH /usr/local/Frameworks/Python.framework/Versions/Current/bin
 if test -d $PYTHON3_PATH
   set PATH $PATH $PYTHON3_PATH
+end
+
+# Add pipx binaries folder to path
+set PIPX_BIN_PATH /Users/gabe/.local/bin
+if test -d $PIPX_BIN_PATH
+  set PATH $PATH $PIPX_BIN_PATH
 end
 
 ### Add TeX to the path
@@ -35,8 +40,7 @@ set PATH /usr/local/opt/curl/bin $PATH
 # Virtualfish
 export VIRTUALFISH_HOME=$HOME/Envs
 export PROJECT_HOME=$HOME/Code
-export VIRTUALFISH_DEFUALT_PYTHON=/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
-eval (python -m virtualfish compat_aliases)
+export VIRTUALFISH_DEFUALT_PYTHON=python3
 
 # Look into https://github.com/oh-my-fish/oh-my-fish
 

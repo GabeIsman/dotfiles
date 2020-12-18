@@ -12,8 +12,8 @@ brew install rbenv
 ```
 
 Apps likely needed:
-- Chrome
-- Spectacle
+- Firefox
+- Rectangle
 - Iterm2
 - Postgres
 - 1Password

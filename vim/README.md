@@ -6,13 +6,10 @@ cd vim
 ./configure --with-features=huge \
             --enable-multibyte \
             --enable-rubyinterp \
-            --enable-pythoninterp \
             --enable-python3interp \
-            --enable-perlinterp \
+            --enable-perlinterp
 make
 make install
-# You made need to do update the PATH to set /usr/local/bin ahead of /usr/bin
-# for this to be the # default vim.
 
 git clone this repo
 ln -s dotfiles/vim ~/.vim
