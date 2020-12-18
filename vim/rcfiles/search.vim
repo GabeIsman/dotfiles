@@ -1,20 +1,15 @@
-" Use ag instead ack if it's available
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
 set ignorecase
 set smartcase
 
 set tags=.git/tags
 
-nnoremap gr :Ack <cword><cr>
-nnoremap gR :Ack '\b<cword>\b' *<CR>
 
 " Full project searches
-nnoremap <leader>fp :Ack<space>
-vnoremap <leader>fv y:Ack<space><c-r>"<cr>
-nnoremap <leader>f/ :Ack<space><c-r>/<cr>
+nnoremap <leader>fp :GrepperAg<space>
+vnoremap <leader>fv y:GrepperAg<space><c-r>"<cr>
+nnoremap <leader>f/ :GrepperAg<space><c-r>/<cr>
+nnoremap gr :GrepperAg <cword><cr>
+nnoremap gR :GrepperAg '\b<cword>\b' *<CR>
 
 " Replace current word (not necessarily word-bounded) in whole file, with
 " confirm
