@@ -120,6 +120,8 @@ function! PasteCode()
   set nopaste
 endfunction
 
-nmap <leader>p :call PasteCode()<cr>
+nnoremap <leader>p "0p
+xnoremap <leader>p "0p
+vnoremap <leader>p "0p
 " xnoremap p qgvy " When pasting in visual mode, restore the pasted text to the unnamed register
 
