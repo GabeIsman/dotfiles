@@ -3,7 +3,7 @@ alias addalias="$EDITOR ~/.config/fish/aliases.fish; and source ~/.config/fish/a
 # Tool aliases
 alias pkill="pkill -f"
 alias pgrep="pgrep -f"
-alias ll="ls -lah"
+alias ll="ls -lAhF"
 alias ..="cd .."
 alias ....="cd ../.."
 
