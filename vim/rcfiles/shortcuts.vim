@@ -116,6 +116,10 @@ map <leader>a ma:%<c-r>:<cr>`a
 map <leader>ya maggVGy`a
 " Pop up the syntastic errors window
 map <leader>sl :Errors<cr>
+" Open all instances of the TODOs in the current diff against master
+" This is WIP and I haven't gotten it right yet. Should use the quickfix
+" window ideally
+map <leader>td :e search<cr>ggDG:r ! git diff --numstat master -G TODO --name-only<cr>
 
 " Nicer code pasting
 function! PasteCode()
