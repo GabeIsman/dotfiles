@@ -16,9 +16,46 @@ nnoremap <C-n> :call NumberToggle()<cr>
 set colorcolumn=100
 highlight ColorColumn ctermbg=darkyellow guibg=darkyellow
 
-" Syntastic settings
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 2
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
+" Turn on indent guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+" Turn off default toggle mapping because it slows down <leader>i
+silent! unmap <leader>ig
 
+let g:deoplete#enable_at_startup = 1
+
+" Turn on ALE extension for airline
+let g:airline#extensions#ale#enabled = 1
+
+" Specify which linters should run
+" TODO: this could be moved to ftplugin files per language
+let g:ale_linters = {
+  \ 'ruby':
+    \ [
+      \ 'rubocop',
+      \ 'ruby',
+      \ 'brakeman',
+      \ 'cspell',
+      \ 'rails_best_practices',
+    \ ],
+  \ 'javascript': ['prettier', 'tsserver']
+\ }
+
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['prettier'],
+\   'ruby': ['rubocop'],
+\}
+
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
+
+nnoremap <c-i> :ALEHover<CR>
+nnoremap <silent> gr :ALEFindReferences<CR>
+nnoremap <leader>rn :ALERename<CR>
+nnoremap <leader>srn :ALECodeAction<CR>
+vnoremap <leader>srn :ALECodeAction<CR>
+
+nmap <silent> ]e <Plug>(ale_previous_wrap)
+nmap <silent> [e <Plug>(ale_next_wrap)
