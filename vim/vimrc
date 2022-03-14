@@ -13,59 +13,67 @@ function! s:SourceConfigFilesIn(directory)
   endfor
 endfunction
 
-filetype off                  " required for Vundle
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
 set rtp+=/usr/local/opt/fzf
-call vundle#begin()
 
-Plugin 'SirVer/ultisnips'               " Snippet engine
-Plugin 'Valloric/YouCompleteMe'         " Auto completion
-Plugin 'VundleVim/Vundle.vim'           " let Vundle manage Vundle, required
-Plugin 'airblade/vim-gitgutter'         " Show status gutter
-Plugin 'alvan/vim-closetag'             " Auto-insert closing tag
-Plugin 'chaoren/vim-wordmotion'         " More granular word motions for camel and snake case
-Plugin 'chrisbra/csv.vim'               " CSV tools
-Plugin 'cohama/lexima.vim'              " Auto matching pairs
-Plugin 'ervandew/supertab'              " Allow overloading of tab
-Plugin 'nanotech/jellybeans.vim'        " Great colorscheme
-Plugin 'glts/vim-textobj-comment'       " Define a comment text object using textobj-user
-Plugin 'honza/vim-snippets'             " Snippet library
-Plugin 'junegunn/fzf.vim'               " Fuzzy-finder
-Plugin 'kana/vim-textobj-user'          " Declarative API for custom text objects
-Plugin 'kana/vim-textobj-line'          " Custom line text object
-Plugin 'lepture/vim-jinja'              " Jinja/Nunjucks syntax highlighting/indenting
-Plugin 'mhinz/vim-grepper'              " Enable ack/ag for searching
-Plugin 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
-Plugin 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
-Plugin 'plasticboy/vim-markdown'        " Syntax highlighting and nice code folding for Markdown
-Plugin 'scrooloose/nerdtree'            " Replacement tree explorer
-Plugin 'scrooloose/syntastic'           " Syntax checker
-Plugin 'sheerun/vim-polyglot'           " Many languages, syntax, etc.
-Plugin 'sjl/vitality.vim'               " FocusGained,FocusLost events piped from iTerm2
-Plugin 'thoughtbot/vim-rspec'           " Lightweight integration with rspec
-Plugin 'tpope/tpope-vim-abolish'        " Utilities for refactoring/abbreviating/converting variations of words
-Plugin 'vim-airline/vim-airline'        " Fancy statusline
-Plugin 'vim-airline/vim-airline-themes' " Align the colors of said fancy statusline for a few themese
-Plugin 'terryma/vim-multiple-cursors'   " Multiple cursors, Sublime style
-Plugin 'tpope/vim-bundler'              " Integration with Gemfiles
-Plugin 'tpope/vim-commentary'           " Adds easy comment toggling
-Plugin 'tpope/vim-eunuch'               " Adds some basic unix commands
-Plugin 'tpope/vim-fugitive'             " Add nice git bindings/interactions
-Plugin 'tpope/vim-obsession'            " Nicer session handling
-Plugin 'tpope/vim-ragtag'               " Some goodies for better tag manipulation in XML-ish documents
-Plugin 'tpope/vim-rails'                " Tons of features for rails projects
-Plugin 'tpope/vim-rake'                 " Nicer file navigation for ruby libraries
-Plugin 'tpope/vim-repeat'               " Make . work with vim-surround and other plugins
-Plugin 'tpope/vim-rhubarb'              " Enable :Gbrowse
-Plugin 'tpope/vim-surround'             " Handle quotes, parens, tags much more easily
-Plugin 'tpope/vim-unimpaired'           " A variety of pair-wise key bindings
-Plugin 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (not bundled version)
-Plugin 'vim-scripts/YankRing.vim'       " Emacs-flavored kill-ring
-Plugin 'rizzatti/dash.vim'
+call plug#begin('~/.vim/bundle')
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+Plug 'SirVer/ultisnips'               " Snippet engine
+Plug 'Valloric/YouCompleteMe'         " Auto completion
+Plug 'airblade/vim-gitgutter'         " Show status gutter
+Plug 'alvan/vim-closetag'             " Auto-insert closing tag
+Plug 'chaoren/vim-wordmotion'         " More granular word motions for camel and snake case
+Plug 'chrisbra/csv.vim'               " CSV tools
+Plug 'cohama/lexima.vim'              " Auto matching pairs
+Plug 'ervandew/supertab'              " Allow overloading of tab
+Plug 'nanotech/jellybeans.vim'        " Great colorscheme
+Plug 'glts/vim-textobj-comment'       " Define a comment text object using textobj-user
+Plug 'honza/vim-snippets'             " Snippet library
+Plug 'junegunn/fzf.vim'               " Fuzzy-finder
+Plug 'kana/vim-textobj-user'          " Declarative API for custom text objects
+Plug 'kana/vim-textobj-line'          " Custom line text object
+Plug 'lepture/vim-jinja'              " Jinja/Nunjucks syntax highlighting/indenting
+Plug 'mhinz/vim-grepper'              " Enable ack/ag for searching
+Plug 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
+Plug 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
+Plug 'plasticboy/vim-markdown'        " Syntax highlighting and nice code folding for Markdown
+Plug 'scrooloose/nerdtree'            " Replacement tree explorer
+Plug 'sheerun/vim-polyglot'           " Many languages, syntax, etc.
+Plug 'sjl/vitality.vim'               " FocusGained,FocusLost events piped from iTerm2
+Plug 'thoughtbot/vim-rspec'           " Lightweight integration with rspec
+Plug 'vim-airline/vim-airline'        " Fancy statusline
+Plug 'vim-airline/vim-airline-themes' " Align the colors of said fancy statusline for a few themes
+Plug 'tpope/tpope-vim-abolish'        " Utilities for refactoring/abbreviating/converting variations of words
+Plug 'tpope/vim-bundler'              " Integration with Gemfiles
+Plug 'tpope/vim-commentary'           " Adds easy comment toggling
+Plug 'tpope/vim-eunuch'               " Adds some basic unix commands
+Plug 'tpope/vim-fugitive'             " Add nice git bindings/interactions
+Plug 'tpope/vim-obsession'            " Nicer session handling
+Plug 'tpope/vim-ragtag'               " Some goodies for better tag manipulation in XML-ish documents
+Plug 'tpope/vim-rails'                " Tons of features for rails projects
+Plug 'tpope/vim-rake'                 " Nicer file navigation for ruby libraries
+Plug 'tpope/vim-rhubarb'              " Enable :Gbrowse
+Plug 'tpope/vim-surround'             " Handle quotes, parens, tags much more easily
+Plug 'tpope/vim-unimpaired'           " A variety of pair-wise key bindings
+Plug 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (not bundled version)
+Plug 'yssl/QFEnter'                   " Better behavior for opening files from the quickfix window
+Plug 'dense-analysis/ale'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+Plug 'leafgarland/typescript-vim'
+Plug 'tpope/vim-repeat'               " Make . work with vim-surround and other plugins
+
+call plug#end()
 
 runtime macros/matchit.vim
 

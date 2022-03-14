@@ -5,3 +5,5 @@ fish/fishd*
 fish/conf.d
 fish/fish_history
 karabiner/automatic_backups
+vim/autoload
+vim/plugged
