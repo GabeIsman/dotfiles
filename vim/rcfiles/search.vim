@@ -29,6 +29,10 @@ vnoremap <leader>ra y:%s/<c-r>"//g<left><left>
 " Replace current search buffer in whole file, with confirm
 nnoremap <leader>r/ :%s/\<<c-r>/\>//gc<left><left><left>
 
+" Add operator for search
+nmap gs  <plug>(GrepperOperator)
+xmap gs  <plug>(GrepperOperator)
+
 " Search for the visual selection
 vnoremap / "vy/<c-r>v<cr>
 vnoremap ? "vy?<c-r>v<cr>
