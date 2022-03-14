@@ -43,6 +43,10 @@ nnoremap & :&&<cr>
 " Visual mode equivalent of re-running substituted command
 xnoremap & :&&<cr>
 
+" Make home and end keys refer to document rather than line
+nnoremap <home> gg
+nnoremap <end> G
+
 " remove search highlights
 nnoremap <leader>l :nohlsearch<CR>
 
