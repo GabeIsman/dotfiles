@@ -4,6 +4,8 @@ export EDITOR='vim'
 
 source ~/.config/fish/aliases.fish
 
+set VIMRUNTIME ~/code/oss/vim/runtime
+
 ### Added by the Heroku Toolbelt
 set PATH /usr/local/heroku/bin $PATH
 
