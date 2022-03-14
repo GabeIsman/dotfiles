@@ -6,7 +6,7 @@ set tags=.git/tags
 
 " Full project searches
 nnoremap <leader>fp :GrepperAg<space>
-vnoremap <leader>fv y:GrepperAg<space><c-r>"<cr>
+vnoremap <leader>fv y:GrepperAg<space>"<c-r>""<cr>
 nnoremap <leader>f/ :GrepperAg<space><c-r>/<cr>
 nnoremap gr :GrepperAg <cword><cr>
 nnoremap gR :GrepperAg '\b<cword>\b' *<CR>
