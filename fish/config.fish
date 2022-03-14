@@ -51,4 +51,4 @@ set PATH /Users/admin/.rbenv/shims $PATH
 status --is-interactive; and . (rbenv init -|psub)
 
 # Override fzf default command
-export FZF_DEFAULT_COMMAND='rg --files'
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
