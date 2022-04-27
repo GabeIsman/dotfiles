@@ -59,8 +59,9 @@ Plug 'tpope/vim-commentary'           " Adds easy comment toggling
 Plug 'tpope/vim-eunuch'               " Adds some basic unix commands
 Plug 'tpope/vim-fugitive'             " Add nice git bindings/interactions
 Plug 'tpope/vim-obsession'            " Nicer session handling
-Plug 'tpope/vim-ragtag'               " Some goodies for better tag manipulation in XML-ish documents
+Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-rails'                " Tons of features for rails projects
+Plug 'tpope/vim-ragtag'               " Some goodies for better tag manipulation in XML-ish documents
 Plug 'tpope/vim-rake'                 " Nicer file navigation for ruby libraries
 Plug 'tpope/vim-rhubarb'              " Enable :Gbrowse
 Plug 'tpope/vim-surround'             " Handle quotes, parens, tags much more easily
@@ -72,6 +73,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-repeat'               " Make . work with vim-surround and other plugins
+
 
 call plug#end()
 

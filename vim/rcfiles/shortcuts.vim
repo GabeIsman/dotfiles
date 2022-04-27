@@ -68,9 +68,9 @@ nnoremap <leader>rd :redraw!<cr>
 nnoremap <leader>q :quit<cr>
 " Git leader mappings
 nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gb :Gblame<cr>
+
 
 " Open a new file in the current directory
 nnoremap <leader>e :e %:h/
@@ -132,4 +132,3 @@ nnoremap <leader>p "0p
 xnoremap <leader>p "0p
 vnoremap <leader>p "0p
 " xnoremap p qgvy " When pasting in visual mode, restore the pasted text to the unnamed register
-

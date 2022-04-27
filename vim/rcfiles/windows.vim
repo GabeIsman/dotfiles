@@ -34,3 +34,23 @@ function! Maximize()
         let g:window_is_maximized = 1
     endif
 endfunction
+
+" Mappings for navigating between files with matching basenames
+nnoremap <leader>gr :call ConditionalVSplit(expand("%:r:r") . ".rb")<cr>
+nnoremap <leader>gj :call ConditionalVSplit(expand("%:r:r") . ".js")<cr>
+nnoremap <leader>gc :call ConditionalVSplit(expand("%:r:r") . ".scss")<cr>
+nnoremap <leader>gh :call ConditionalVSplit(expand("%:r:r") . ".html.erb")<cr>
+
+function! ConditionalVSplit( fname )
+  let bufnum=bufnr(expand(a:fname))
+  let winnum=bufwinnr(bufnum)
+  if winnum != -1
+    " Jump to existing split
+    exe winnum . "wincmd w"
+  else
+    " Make new split as usual
+    exe "vsplit " . a:fname
+  endif
+endfunction
+
+command! -nargs=1 Split :call ConditionalVSplit("<args>")
