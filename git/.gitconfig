@@ -9,7 +9,9 @@
   default = current
 [alias]
   co = checkout
+  oc = checkout
   ci = commit
+  ic = commit
   me = merge --no-ff --no-edit
   br = branch
   hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
