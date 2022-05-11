@@ -47,7 +47,6 @@ Plug 'nanotech/jellybeans.vim'        " Great colorscheme
 Plug 'nathanaelkane/vim-indent-guides' " Vertical guides
 Plug 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plug 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
-Plug 'preservim/vim-markdown'         " Syntax highlighting and nice code folding for Markdown
 Plug 'scrooloose/nerdtree'            " Replacement tree explorer
 Plug 'sheerun/vim-polyglot'           " Many languages, syntax, etc.
 Plug 'sjl/vitality.vim'               " FocusGained,FocusLost events piped from iTerm2
