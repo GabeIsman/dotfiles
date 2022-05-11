@@ -71,11 +71,9 @@ Plug 'vim-airline/vim-airline'        " Fancy statusline
 Plug 'vim-airline/vim-airline-themes' " Align the colors of said fancy statusline for a few themes
 Plug 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (not bundled version)
 Plug 'yssl/QFEnter'                   " Better behavior for opening files from the quickfix window
-
+Plug 'tommcdo/vim-exchange'           " Exchange regions of text
 
 call plug#end()
-
-runtime macros/matchit.vim
 
 call s:SourceConfigFilesIn('rcfiles')
 
