@@ -23,8 +23,6 @@ let g:indent_guides_guide_size = 1
 " Turn off default toggle mapping because it slows down <leader>i
 silent! unmap <leader>ig
 
-let g:deoplete#enable_at_startup = 1
-
 " Turn on ALE extension for airline
 let g:airline#extensions#ale#enabled = 1
 
