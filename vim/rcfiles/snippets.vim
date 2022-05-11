@@ -11,4 +11,4 @@ let g:UltiSnipsListSnippets = "<c-s>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetsDir="~/.vim/snips"
+let g:UltiSnipsSnippetsDirecotories=["~/.vim/snips"]
