@@ -41,6 +41,14 @@ nnoremap <leader>gj :call ConditionalVSplit(expand("%:r:r") . ".js")<cr>
 nnoremap <leader>gc :call ConditionalVSplit(expand("%:r:r") . ".scss")<cr>
 nnoremap <leader>gh :call ConditionalVSplit(expand("%:r:r") . ".html.erb")<cr>
 
+" Open a new file in the current directory
+nnoremap <leader>ed :e <c-r>=expand('%:h')<cr>/
+nnoremap <leader>vsp :vsp <c-r>=expand('%:h')<cr>/
+nnoremap <leader>sp :sp <c-r>=expand('%:h')<cr>/
+" Create the file in single quotes relative to the current directory
+nnoremap <leader>cf "ayi':vsp <c-r>=simplify(expand('%:h') . "/<c-r>a")<cr><cr>
+vnoremap <leader>cf "ay:vsp <c-r>=simplify(expand('%:h') . "/<c-r>"")<cr><cr>
+
 function! ConditionalVSplit( fname )
   let bufnum=bufnr(expand(a:fname))
   let winnum=bufwinnr(bufnum)

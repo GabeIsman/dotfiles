@@ -7,6 +7,14 @@ xmap ih <Plug>GitGutterTextObjectInnerVisual
 xmap ah <Plug>GitGutterTextObjectOuterVisual
 nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
-nmap <Leader>ha <Plug>GitGutterStageHunk
-nmap <Leader>hc <Plug>GitGutterUndoHunk
-nmap <Leader>hv <Plug>GitGutterPreviewHunk
+nmap <Leader>ha <Plug>(GitGutterStageHunk)
+nmap <Leader>hc <Plug>(GitGutterUndoHunk)
+nmap <Leader>hv <Plug>(GitGutterPreviewHunk)
+
+" Git leader mappings
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>rm :Gremove<cr>
+vnoremap <leader>gl :Gbrowse<cr>
+nnoremap <leader>gl :Gbrowse<cr>
