@@ -45,6 +45,8 @@ nnoremap <leader>gh :call ConditionalVSplit(expand("%:r:r") . ".html.erb")<cr>
 nnoremap <leader>ed :e <c-r>=expand('%:h')<cr>/
 nnoremap <leader>vsp :vsp <c-r>=expand('%:h')<cr>/
 nnoremap <leader>sp :sp <c-r>=expand('%:h')<cr>/
+" Pull in the contents of a file
+nnoremap <leader>rf :r <c-r>=expand('%:h')<cr>/
 " Create the file in single quotes relative to the current directory
 nnoremap <leader>cf "ayi':vsp <c-r>=simplify(expand('%:h') . "/<c-r>a")<cr><cr>
 vnoremap <leader>cf "ay:vsp <c-r>=simplify(expand('%:h') . "/<c-r>"")<cr><cr>
