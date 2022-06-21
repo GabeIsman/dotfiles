@@ -37,7 +37,8 @@ let g:ale_linters = {
       \ 'cspell',
       \ 'rails_best_practices',
     \ ],
-  \ 'javascript': ['prettier', 'tsserver']
+  \ 'javascript': ['prettier', 'tsserver'],
+  \ 'sass': ['prettier']
 \ }
 
 let g:ale_fixers = {

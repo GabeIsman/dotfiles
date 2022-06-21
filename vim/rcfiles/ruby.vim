@@ -4,4 +4,3 @@ augroup rubypath
   autocmd!
   autocmd FileType ruby setlocal suffixesadd+=.rb
 augroup END
-
