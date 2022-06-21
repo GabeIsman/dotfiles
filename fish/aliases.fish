@@ -13,7 +13,6 @@ alias prose="vim -u ~/.vim/prose.vim -c 'Goyo'"
 alias lowerfiles="ls | sed -n 's/.*/mv \"&\" \$(tr \"[A-Z]\" \"[a-z]\" <<< \"&\")/p' | bash"
 
 # Temporary
-alias publishable="mergebrstack date-time-component editable-info-component convert-public-to-status publishable-decorator publishable-editor"
 
 # Create a new TMP graphic
 function newgraphic -d "Create a new TMP Graphic in directory" -a dir
