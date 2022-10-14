@@ -1,11 +1,12 @@
 [user]
-	name = Gabe Isman
-	email = gabe.isman@gmail.com
+  name = Gabe Isman
+  email = gabe.isman@gmail.com
 [color]
   ui = true
 [merge]
   renamelimit = 2000
 [push]
+  autoSetupRemote = true
   default = current
 [alias]
   co = checkout
@@ -26,13 +27,13 @@
   excludesfile = ~/.gitignore
 [init]
   templatedir = ~/.git_template
-	defaultBranch = main
+  defaultBranch = main
 [diff]
   algorithm = patience
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [pull]
-	ff = only
+  ff = only
