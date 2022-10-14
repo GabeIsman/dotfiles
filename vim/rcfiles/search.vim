@@ -18,6 +18,8 @@ nnoremap <leader>ra :%s/<c-r><c-w>//gc<left><left><left>
 nnoremap <leader>rw :%s/\<<c-r><c-w>\>//gc<left><left><left>
 " Replace bounded word on line
 nnoremap <leader>rl :s/\<<c-r><c-w>\>//g<left><left>
+" Setup a an 'n.' style replacement for the current word
+nnoremap <leader>r* *Nciw
 " Replace the rest of the word on the whole line
 nnoremap <leader>re ye:s/<c-r>"//g<left><left>
 " Replace the current search pattern in the whole file
