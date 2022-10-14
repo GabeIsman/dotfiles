@@ -49,6 +49,8 @@ nnoremap <leader>vsp :vsp <c-r>=expand('%:h')<cr>/
 nnoremap <leader>sp :sp <c-r>=expand('%:h')<cr>/
 " Pull in the contents of a file
 nnoremap <leader>rf :r <c-r>=expand('%:h')<cr>/
+" Rename the current file
+nnoremap <leader>rn :Rename <c-r>=expand('%:t')<cr><c-f>
 " Create the file in single quotes relative to the current directory
 nnoremap <leader>cf "ayi':vsp <c-r>=simplify(expand('%:h') . "/<c-r>a")<cr><cr>
 vnoremap <leader>cf "ay:vsp <c-r>=simplify(expand('%:h') . "/<c-r>"")<cr><cr>
