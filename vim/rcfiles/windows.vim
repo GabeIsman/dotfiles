@@ -1,13 +1,15 @@
 " Window movement commands
-nmap <c-k> :wincmd k<cr>
-nmap <c-j> :wincmd j<cr>
-nmap <c-h> :wincmd h<cr>
-nmap <c-l> :wincmd l<cr>
+nnoremap <c-k> :wincmd k<cr>
+nnoremap <c-j> :wincmd j<cr>
+nnoremap <c-h> :wincmd h<cr>
+nnoremap <c-l> :wincmd l<cr>
 
 nmap <leader>tn :call Maximize()<cr>
 
 " Switch to most recently used buffer
-nmap <leader><leader> :b#<cr>
+nnoremap <leader><leader> :b#<cr>
+nnoremap <c-n> :bnext<cr>
+nnoremap <c-p> :bprevious<cr>
 
 " FZF mappings
 nmap <leader>o :Files<cr>
