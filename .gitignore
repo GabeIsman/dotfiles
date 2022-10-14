@@ -7,3 +7,4 @@ fish/fish_history
 karabiner/automatic_backups
 vim/autoload
 vim/plugged
+vim/undodir

@@ -28,7 +28,6 @@ set expandtab  " tabs are spaces
 " set lazyredraw " redraw only when needed
 set linebreak      " Break visual wraps at reasonable breakpoints, not at the last visible character
 set nobackup       " no backup files
-set nolist         " Don't visually indicate the end of a line
 set noswapfile     " no swap files
 set nowritebackup  " only in case you don't want a backup file while editing
 set number  " show line numbers
@@ -40,6 +39,7 @@ set splitright     " Make the new vertical split the right one
 set sw=2 " Use 2 spaces when indenting visual blocks
 set tabstop=2 " spaces per tab visually
 set wrap           " Wrap lines that are bigger than the screen
+set hidden
 
 " Tell vitality not to bother, since we just did it.
 let g:vitality_fix_cursor = 0
