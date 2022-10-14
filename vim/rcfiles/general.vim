@@ -43,3 +43,6 @@ set hidden
 
 " Tell vitality not to bother, since we just did it.
 let g:vitality_fix_cursor = 0
+
+" Turn off pair-matching for basic punctuation
+let g:lexima_enable_basic_rules = 0
