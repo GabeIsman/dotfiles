@@ -12,9 +12,9 @@ nmap <Leader>hc <Plug>(GitGutterUndoHunk)
 nmap <Leader>hv <Plug>(GitGutterPreviewHunk)
 
 " Git leader mappings
-nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gd :Gdiff<cr>
-nnoremap <leader>gb :Gblame<cr>
-nnoremap <leader>rm :Gremove<cr>
-vnoremap <leader>gl :Gbrowse<cr>
-nnoremap <leader>gl :Gbrowse<cr>
+nnoremap <leader>gs :Git<cr>
+nnoremap <leader>gd :GDiff<cr>
+nnoremap <leader>gb :Git blame<cr>
+nnoremap <leader>rm :GDelete<cr>
+vnoremap <leader>gl :GBrowse<cr>
+nnoremap <leader>gl :GBrowse<cr>
