@@ -1,0 +1,29 @@
+{
+  "title": "Firefox modifications",
+  "rules": [
+    {
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": ["left_command"],
+              "optional": ["caps_lock"]
+            }
+          },
+          "to": {
+            "key_code": "f6"
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^org\\.mozilla\\.firefox$"]
+            }
+          ],
+          "description": "Remap command+h to f6"
+        }
+      ]
+    }
+  ]
+}
