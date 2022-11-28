@@ -3,8 +3,13 @@
 augroup jspath
   autocmd!
   autocmd FileType javascript,javascript.jsx setlocal suffixesadd+=.js
-  autocmd FileType javascript,javascript.jsx setlocal path+=app/javascript,app/components,node_modules
-augroup END
+  autocmd FileType javascript,javascript.jsx setlocal path+=app/javascript,app,node_modules,,.
+  autocmd FileType javascript,javascript.jsx setlocal includeexpr=substitute(v:fname,'^\$','','')
+  autocmd FileType javascript,javascript.jsx nnoremap <buffer> <C-]> :YcmCompleter GoTo<CR>
+  autocmd FileType javascript,javascript.jsx nnoremap <buffer> gf :YcmCompleter GoTo<CR>
+  autocmd FileType javascript,javascript.jsx let b:ycm_hover = {
+        \ 'command': 'GetDoc',
+        \ 'syntax': &filetype
+        \ }
 
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_javascript_eslint_exec='$(npm bin)/eslint'
+augroup END
