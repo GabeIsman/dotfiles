@@ -4,11 +4,12 @@ source /usr/local/share/fish/completions/git.fish
 alias gd="git diff --patience --ignore-space-change --minimal"
 alias st="git status -s"
 alias gdc="git diff -w --cached"
+alias gds="git diff --stat"
 alias glc="git log --branches --not --remotes"
 alias ci="git commit --no-edit"
 alias untrkd="git status --short | grep '??' | cut -d ' ' -f 2 | xargs git add"
 alias rmuntrkd="git status --short | grep '??' | cut -d ' ' -f 2 | xargs rm"
-alias rmbr="git branch --merged | egrep -v \"(^\*|master)\" | xargs git branch -d"
+alias rmbr="git branch --merged | egrep -v \"(^\*|main)\" | xargs git branch -d"
 # Add or commit all whitespace-only changed lines
 alias gwa="git add -A; and git diff --cached -w | git apply --cached -R"
 alias gwc="git add -A; and git diff --cached -w | git apply --cached -R; and git commit -m Whitespace"
@@ -36,6 +37,13 @@ function rb -d "List branches with recent commits" -a num
     set num 10
   end
   git for-each-ref --count=$num --sort=-committerdate --format='%(committerdate:relative)|||%(refname:short)|||%(contents:subject)' refs/heads/ | column -s '|||' -t
+end
+
+function lrb -d "List oldest branches" -a num
+  if test -z $num
+    set num 10
+  end
+  git for-each-ref --count=$num --sort=committerdate --format='%(committerdate:relative)|||%(refname:short)|||%(contents:subject)' refs/heads/ | column -s '|||' -t
 end
 
 function mergebrstack -d "Merge a stack of downstream PRs"

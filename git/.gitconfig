@@ -16,7 +16,7 @@
   me = merge --no-ff --no-edit
   br = branch
   hist = log --graph --max-count=20 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-  recent = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:relative)\t%(refname:short)\t\t%(contents:subject)' refs/heads/
+  recent = for-each-ref --count=20 --sort=-committerdate --format='%(committerdate:relative)\t%(refname:short)\t\t%(contents:subject)' refs/heads/
   praise = blame
   st = status
   unstage = reset HEAD
@@ -37,3 +37,5 @@
   required = true
 [pull]
   ff = only
+[branch]
+  sort = -committerdate
