@@ -13,7 +13,7 @@
   oc = checkout
   ci = commit
   ic = commit
-  me = merge --no-ff --no-edit
+  me = merge --no-edit
   br = branch
   hist = log --graph --max-count=20 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
   recent = for-each-ref --count=20 --sort=-committerdate --format='%(committerdate:relative)\t%(refname:short)\t\t%(contents:subject)' refs/heads/
@@ -35,7 +35,5 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
-[pull]
-  ff = only
 [branch]
   sort = -committerdate
