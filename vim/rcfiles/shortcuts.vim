@@ -10,16 +10,16 @@ noremap gk k
 inoremap jk <esc>
 inoremap jj <esc>
 
+" Scrolling remaps
 " H K L J should move the cursor
-nnoremap J <C-d>
-vnoremap J <C-d>
-onoremap J <C-d>
-nnoremap K <C-U>
-xnoremap K <C-U>
-nnoremap K <C-U>
+noremap J <C-d>
+noremap K <C-U>
 noremap H ^
-onoremap H ^
-noremap L g$
+noremap L $
+" Scroll by half-pages with f/b
+noremap <c-f> <c-d>
+noremap <c-b> <c-u>
+
 
 " Since we're mapping over join, lets call it merge
 noremap M J
