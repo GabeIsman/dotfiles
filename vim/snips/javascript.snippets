@@ -1,0 +1,21 @@
+snippet ce "Custom element definition"
+class $1 extends HTMLElement {
+    connectedCallback() {
+        $3
+    }
+}
+
+if (!window.customElements.get('$2')) {
+  window.$1 = $1;
+  window.customElements.define('$2', $1);
+}
+endsnippet
+
+snippet cec "Adds a custom element to window, and customElements"
+if (!window.customElements.get('$1')) {
+  window.$2 = $2;
+  window.customElements.define('$1', $2);
+}
+endsnippet
+
+# vim:ft=snippets:
