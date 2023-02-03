@@ -69,6 +69,7 @@ Plug 'tpope/vim-unimpaired'           " A variety of pair-wise key bindings
 Plug 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (not bundled version)
 Plug 'yssl/QFEnter'                   " Better behavior for opening files from the quickfix window
 Plug 'tommcdo/vim-exchange'           " Exchange regions of text
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
