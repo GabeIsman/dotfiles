@@ -38,3 +38,8 @@ xmap gs  <plug>(GrepperOperator)
 " Search for the visual selection
 vnoremap / "vy/<c-r>v<cr>
 vnoremap ? "vy?<c-r>v<cr>
+
+" Remap vim-Visual-multi
+let g:VM_maps = {}
+let g:VM_maps['Find Under']         = '<C-d>'
+let g:VM_maps['Find Subword Under'] = '<C-d>'
