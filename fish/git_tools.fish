@@ -1,6 +1,7 @@
 source /usr/local/share/fish/completions/git.fish
 
 # Git shortcuts
+alias g="git"
 alias gd="git diff --patience --ignore-space-change --minimal"
 alias st="git status -s"
 alias gdc="git diff -w --cached"

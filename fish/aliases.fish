@@ -8,6 +8,7 @@ alias pgrep="pgrep -f"
 alias ..="cd .."
 alias ....="cd ../.."
 alias prose="vim -u ~/.vim/prose.vim -c 'Goyo'"
+alias b="bundle"
 
 # File manipulation
 alias lowerfiles="ls | sed -n 's/.*/mv \"&\" \$(tr \"[A-Z]\" \"[a-z]\" <<< \"&\")/p' | bash"
