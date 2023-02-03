@@ -50,33 +50,7 @@ nnoremap <end> G
 " remove search highlights
 nnoremap <leader>l :nohlsearch<CR>
 
-" Leader mappings for commonly used tasks
 
-" Write current buffer
-nmap <leader>s :w<CR>
-" Open project notes
-nnoremap <leader>en :tabnew NOTES.md<cr>
-" Open scratch file with the same extension
-nnoremap <leader>es :vsp scratch.<c-r>=simplify(expand('%:e'))<cr><cr>
-" Open NERDTree at the current file's directory
-nnoremap <leader>ex :NERDTreeFind<cr>
-" Repeat the last command, @: is a little awkward
-nnoremap <leader>. @:
-" Redraw
-nnoremap <leader>rd :redraw!<cr>
-" Map :quit
-nnoremap <leader>q :quit<cr>
-
-" Split out projectionist alternate file
-map <Leader>gt :AV<cr>
-
-" Go to the file in quotes
-map <leader>' vi'gf
-" Go to file in vertical split, awkward that this depends on rails
-nnoremap <leader>gv :vsp <c-r>=findfile(rails#cfile())<cr><cr>
-" Open last buffer in vertical split
-nnoremap <leader>vl :vert sb#<cr>
-nnoremap <leader>vs :sp sb#<cr>
 " Retab the whole file
 map <leader>rt :%retab<cr>
 " Re-indent the whole file
@@ -87,11 +61,6 @@ map <leader>, :s/,/,\r/g<cr>:nohlsearch<cr>=ap<cr>
 map <leader>a ma:%<c-r>:<cr>`a
 map <leader>ya maggVGy`a
 " Pop up the syntastic errors window
-map <leader>sl :Errors<cr>
-" Open all instances of the TODOs in the current diff against master
-" This is WIP and I haven't gotten it right yet. Should use the quickfix
-" window ideally
-map <leader>td :e search<cr>ggDG:r ! git diff --numstat master -G TODO --name-only<cr>
 
 " Nicer code pasting
 function! PasteCode()
