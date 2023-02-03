@@ -68,7 +68,7 @@
   "Bound Hosts" : [
 
   ],
-  "Working Directory" : "\/Users\/admin\/code\/work\/endrun",
+  "Working Directory" : "~\/code\/work\/endrun",
   "Blinking Cursor" : false,
   "Space" : 0,
   "Sync Title" : false,
@@ -429,7 +429,7 @@
     "Red Component" : 0.73333334922790527,
     "Blue Component" : 0.73333334922790527
   },
-  "Working Directory" : "\/Users\/admin",
+  "Working Directory" : "~",
   "Use Tab Color" : false,
   "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
@@ -923,7 +923,7 @@
   "Bound Hosts" : [
 
   ],
-  "Working Directory" : "\/Users\/admin\/code\/work\/endrun",
+  "Working Directory" : "~\/code\/work\/endrun",
   "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
   "Sync Title" : false,
@@ -1290,7 +1290,7 @@
   "Bound Hosts" : [
 
   ],
-  "Working Directory" : "\/Users\/admin\/code\/work\/endrun",
+  "Working Directory" : "~\/code\/work\/endrun",
   "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
   "Sync Title" : false,
@@ -1646,7 +1646,7 @@
   "Bound Hosts" : [
 
   ],
-  "Working Directory" : "\/Users\/admin\/code\/work\/endrun",
+  "Working Directory" : "~\/code\/work\/endrun",
   "Blinking Cursor" : false,
   "Disable Window Resizing" : true,
   "Sync Title" : false,
