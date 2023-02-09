@@ -1,3 +1,5 @@
+let mapleader=" " " Map leader key to space
+
 if !has('nvim')
   set nocompatible              " be iMproved, required for Vundle
   syntax on " enable syntax highlighting
