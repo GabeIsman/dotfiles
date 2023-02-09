@@ -11,6 +11,8 @@ nnoremap <leader><leader> :b#<cr>
 nnoremap <c-n> :bnext<cr>
 nnoremap <c-p> :bprevious<cr>
 
+" Add FZF binary to runtime path
+set rtp+=/usr/local/opt/fzf
 " FZF mappings
 nmap <leader>o :Files<cr>
 " Search [i]n the directory of the current file
@@ -47,7 +49,7 @@ nnoremap <leader>rd :redraw!<cr>
 nnoremap <leader>q :quit<cr>
 
 " Write current buffer
-nmap <leader>s :w<CR>
+nmap <leader>s :w!<CR>
 " Open project notes
 nnoremap <leader>en :tabnew NOTES.md<cr>
 " Open scratch file with the same extension

@@ -18,22 +18,21 @@ if !has('nvim')
   runtime macros/matchit.vim
 
   " Change the cursor shape based on mode
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  let &t_SI = "\e[6 q"
+  let &t_EI = "\e[2 q"
 endif
 
 set autowriteall   " Automatically write buffers when opening a new one (various commands)
 set clipboard=unnamed " Use the system clipboard by default for yanking/pasting
-set cursorline " highlight current line
+" set cursorline " highlight current line
 set expandtab  " tabs are spaces
-" set lazyredraw " redraw only when needed
+set lazyredraw " redraw only when needed
 set linebreak      " Break visual wraps at reasonable breakpoints, not at the last visible character
 set nobackup       " no backup files
 set noswapfile     " no swap files
 set nowritebackup  " only in case you don't want a backup file while editing
 set number  " show line numbers
-set scrolloff=1    " Keep one line below/above cursor
+set scrolloff=7    " Keep one line below/above cursor
 set showmatch " highlight matching brackets
 set softtabstop=2 " spaces per tab when editing
 set splitbelow     " Make the new vertical split the bottom one
@@ -42,9 +41,3 @@ set sw=2 " Use 2 spaces when indenting visual blocks
 set tabstop=2 " spaces per tab visually
 set wrap           " Wrap lines that are bigger than the screen
 set hidden
-
-" Tell vitality not to bother, since we just did it.
-let g:vitality_fix_cursor = 0
-
-" Turn off pair-matching for basic punctuation
-let g:lexima_enable_basic_rules = 0

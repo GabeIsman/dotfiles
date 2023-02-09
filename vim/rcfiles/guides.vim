@@ -1,30 +1,9 @@
-" Use relative numbers in normal mode, and absolute in insert
-autocmd InsertEnter * :set norelativenumber
-autocmd InsertLeave * :set relativenumber
-
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set norelativenumber
-  else
-    set relativenumber
-  endif
-endfunc
-
-nnoremap <C-n> :call NumberToggle()<cr>
-
 " Make it obvious where 100 characters is but don't auto wrap.
 set colorcolumn=100
 highlight ColorColumn ctermbg=darkyellow guibg=darkyellow
 
-" Turn on indent guides
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-" Turn off default toggle mapping because it slows down <leader>i
-silent! unmap <leader>ig
-
-" Turn on ALE extension for airline
-let g:airline#extensions#ale#enabled = 1
+" Turn off pair-matching for basic punctuation
+let g:lexima_enable_basic_rules = 0
 
 " Specify which linters should run
 " TODO: this could be moved to ftplugin files per language
@@ -50,6 +29,8 @@ let g:ale_fixers = {
 
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
+" Disable linting between saves
+let g:ale_lint_on_text_changed = 'never'
 
 nnoremap <c-i> :ALEHover<CR>
 nnoremap <silent> gr :ALEFindReferences<CR>
