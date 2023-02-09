@@ -73,12 +73,9 @@ Plug 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (
 
 " Visual guides
 Plug 'nanotech/jellybeans.vim'        " Great colorscheme
-Plug 'nathanaelkane/vim-indent-guides' " Vertical guides
-Plug 'ntpeters/vim-better-whitespace' " Whitespace highlighting and trimming
 Plug 'mhinz/vim-signify'              " Git gutter signs
 
 " Miscellaneous
-Plug 'sjl/vitality.vim'               " FocusGained,FocusLost events piped from iTerm2
 Plug 'yssl/QFEnter'                   " Better behavior for opening files from the quickfix window
 Plug 'cohama/lexima.vim'              " Auto matching pairs
 
