@@ -87,6 +87,28 @@
                     {
                         "manipulators": [
                             {
+                                "description": "Remap command+backspace to command+space",
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "spacebar",
+                                    "modifiers": [
+                                        "left_command"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
                                 "type": "basic",
                                 "from": {
                                     "key_code": "h",
