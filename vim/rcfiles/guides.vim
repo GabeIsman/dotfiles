@@ -26,7 +26,9 @@ let g:ale_fixers = {
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
 " Disable linting between saves
-let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_text_changed = "never"
+" Only show virtualtext on the current line
+let g:ale_virtualtext_cursor = "disabled"
 
 nnoremap <c-i> :ALEHover<CR>
 nnoremap <silent> gr :ALEFindReferences<CR>
