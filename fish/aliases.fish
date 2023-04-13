@@ -7,7 +7,9 @@ alias pkill="pkill -f"
 alias pgrep="pgrep -f"
 alias ..="cd .."
 alias ....="cd ../.."
-alias prose="vim -u ~/.vim/prose.vim -c 'Goyo'"
+alias prose="nvim -u ~/.vim/prose.vim -c 'Goyo'"
+alias vim=nvim
+alias ogvim=/usr/local/bin/vim
 alias b="bundle"
 
 # File manipulation

@@ -1,6 +1,6 @@
 fish_vi_key_bindings
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 source ~/.config/fish/aliases.fish
 
