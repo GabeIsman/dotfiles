@@ -12,9 +12,14 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin('~/.vim/bundle')
 
 " Completion and snippets
-Plug 'Valloric/YouCompleteMe'         " Auto completion
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 Plug 'SirVer/ultisnips'               " Snippets
-Plug 'ervandew/supertab'              " Allow overloading of tab
 
 " Linting and prettifying
 Plug 'dense-analysis/ale'             " Async syntax engines
@@ -38,9 +43,10 @@ Plug 'tpope/vim-surround'             " Handle quotes, parens, tags much more ea
 Plug 'tpope/vim-unimpaired'           " A variety of pair-wise key bindings
 
 " Custom motions and objects
+Plug 'kana/vim-textobj-user'          " Declarative API for custom text objects
 Plug 'chaoren/vim-wordmotion'         " More granular word motions for camel and snake case
 Plug 'kana/vim-textobj-line'          " Custom line text object
-Plug 'kana/vim-textobj-user'          " Declarative API for custom text objects
+Plug 'glts/vim-textobj-comment'       " Comments
 Plug 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plug 'tommcdo/vim-exchange'           " Exchange regions of text
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
@@ -56,6 +62,7 @@ Plug 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (
 
 " Visual guides
 Plug 'nanotech/jellybeans.vim'        " Great colorscheme
+Plug 'sainnhe/everforest'
 Plug 'mhinz/vim-signify'              " Git gutter signs
 
 " Miscellaneous

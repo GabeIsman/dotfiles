@@ -5,11 +5,6 @@ augroup jspath
   autocmd FileType javascript,javascript.jsx setlocal suffixesadd+=.js
   autocmd FileType javascript,javascript.jsx setlocal path+=app/javascript,app,node_modules,,.
   autocmd FileType javascript,javascript.jsx setlocal includeexpr=substitute(v:fname,'^\$','','')
-  autocmd FileType javascript,javascript.jsx nnoremap <buffer> <C-]> :YcmCompleter GoTo<CR>
-  autocmd FileType javascript,javascript.jsx nnoremap <buffer> gf :YcmCompleter GoTo<CR>
-  autocmd FileType javascript,javascript.jsx let b:ycm_hover = {
-        \ 'command': 'GetDoc',
-        \ 'syntax': &filetype
-        \ }
-
+  autocmd FileType javascript,javascript.jsx nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
+  autocmd FileType javascript,javascript.jsx nnoremap <buffer> gf :ALEGoToDefinition<CR>
 augroup END

@@ -1,8 +1,11 @@
+" Basic setup, including mapleader
+source ~/.vim/rcfiles/general.vim
+
 " Source all the focused config files
 source ~/.vim/rcfiles/abbreviations.vim
 source ~/.vim/rcfiles/configmgmt.vim
+source ~/.vim/rcfiles/completion.vim
 source ~/.vim/rcfiles/disk.vim
-source ~/.vim/rcfiles/general.vim
 source ~/.vim/rcfiles/git.vim
 source ~/.vim/rcfiles/guides.vim
 source ~/.vim/rcfiles/html.vim
