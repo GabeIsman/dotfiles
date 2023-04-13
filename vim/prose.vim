@@ -30,7 +30,6 @@ source ~/.vim/rcfiles/shortcuts.vim
 source ~/.vim/rcfiles/markdown.vim
 source ~/.vim/rcfiles/windows.vim
 source ~/.vim/rcfiles/disk.vim
-source ~/.vim/rcfiles/colors.vim
 
 let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
 
