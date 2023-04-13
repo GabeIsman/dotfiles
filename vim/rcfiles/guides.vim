@@ -1,7 +1,3 @@
-" Make it obvious where 100 characters is but don't auto wrap.
-set colorcolumn=100
-highlight ColorColumn ctermbg=darkyellow guibg=darkyellow
-
 " Turn off pair-matching for basic punctuation
 let g:lexima_enable_basic_rules = 0
 
