@@ -2,9 +2,9 @@ set updatetime=100
 
 " Git leader mappings
 nnoremap <leader>gs :Git<cr>
-nnoremap <leader>gd :GDiff<cr>
+nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gb :Git blame<cr>
-nnoremap <leader>rm :GDelete<cr>
+nnoremap <leader>rm :GDelete!<cr>
 vnoremap <leader>gl :GBrowse<cr>
 nnoremap <leader>gl :GBrowse<cr>
 
