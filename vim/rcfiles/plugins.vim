@@ -12,14 +12,16 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin('~/.vim/bundle')
 
 " Completion and snippets
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-Plug 'SirVer/ultisnips'               " Snippets
+" Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+" For ultisnips users.
+" Plug 'SirVer/ultisnips'
+" Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 " Linting and prettifying
 Plug 'dense-analysis/ale'             " Async syntax engines
