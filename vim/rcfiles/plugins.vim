@@ -68,6 +68,7 @@ Plug 'mhinz/vim-signify'              " Git gutter signs
 " Miscellaneous
 Plug 'yssl/QFEnter'                   " Better behavior for opening files from the quickfix window
 Plug 'cohama/lexima.vim'              " Auto matching pairs
+Plug 'vim-test/vim-test'              " Launch tests
 
 " AI
 Plug 'github/copilot.vim'

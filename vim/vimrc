@@ -22,6 +22,7 @@ source ~/.vim/rcfiles/snippets.vim
 source ~/.vim/rcfiles/spelling.vim
 source ~/.vim/rcfiles/statusline.vim
 source ~/.vim/rcfiles/surround.vim
+source ~/.vim/rcfiles/test.vim
 source ~/.vim/rcfiles/windows.vim
 
 " Load the plugins
