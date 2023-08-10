@@ -17,7 +17,6 @@ set rtp+=/usr/local/opt/fzf
 nmap <leader>o :Files<cr>
 " Search [i]n the directory of the current file
 nmap <leader>i :Files <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr><cr>
-nmap <leader>t :Tags<cr>
 nmap <leader>b :Buffers<cr>
 
 " FZF control keys

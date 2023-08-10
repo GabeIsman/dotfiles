@@ -6,10 +6,18 @@ set tags=.git/tags
 
 " Full project searches
 nnoremap <leader>fp :GrepperAg<space>
-vnoremap <leader>fv y:GrepperAg<space>"<c-r>""<cr>
-nnoremap <leader>f/ :GrepperAg<space><c-r>/<cr>
-nnoremap gr :GrepperAg <cword><cr>
-nnoremap gR :GrepperAg '\b<cword>\b' *<CR>
+vnoremap <leader>* :Grepper -tool rg -noprompt<cr>
+nnoremap <leader>* :Grepper -tool rg -cword -noprompt<cr>
+nnoremap <leader>f/ :GrepperRg<space><c-r>/<cr>
+nnoremap gr :Grepper -tool rg -cword -noprompt<cr>
+nnoremap gR :GrepperRg '\b<cword>\b' *<CR>
+
+" Add operator for search
+nmap gs  <plug>(GrepperOperator)
+xmap gs  <plug>(GrepperOperator)
+
+" Find todos
+command! Todo Grepper -noprompt -tool git -query -E '(TODO|FIXME|XXX):'
 
 " Replace current word (not necessarily word-bounded) in whole file, with
 " confirm
@@ -30,10 +38,6 @@ vnoremap <leader>rv y:s/<c-r>"//g<left><left>
 vnoremap <leader>ra y:%s/<c-r>"//g<left><left>
 " Replace current search buffer in whole file, with confirm
 nnoremap <leader>r/ :%s/\<<c-r>/\>//gc<left><left><left>
-
-" Add operator for search
-nmap gs  <plug>(GrepperOperator)
-xmap gs  <plug>(GrepperOperator)
 
 " Search for the visual selection
 vnoremap / "vy/<c-r>v<cr>
