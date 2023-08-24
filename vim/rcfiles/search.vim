@@ -6,15 +6,16 @@ set tags=.git/tags
 
 " Full project searches
 nnoremap <leader>fp :GrepperAg<space>
-vnoremap <leader>* :Grepper -tool rg -noprompt<cr>
 nnoremap <leader>* :Grepper -tool rg -cword -noprompt<cr>
-nnoremap <leader>f/ :GrepperRg<space><c-r>/<cr>
+nnoremap <leader>f/ :GrepperAg<space><c-r>/<cr>
 nnoremap gr :Grepper -tool rg -cword -noprompt<cr>
 nnoremap gR :GrepperRg '\b<cword>\b' *<CR>
 
 " Add operator for search
 nmap gs  <plug>(GrepperOperator)
 xmap gs  <plug>(GrepperOperator)
+" old habits die hard
+vnoremap <leader>fv <plug>(GrepperOperator)
 
 " Find todos
 command! Todo Grepper -noprompt -tool git -query -E '(TODO|FIXME|XXX):'
