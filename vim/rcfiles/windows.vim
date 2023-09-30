@@ -81,7 +81,8 @@ nnoremap <leader>gc :call ConditionalVSplit(expand("%:r:r") . ".scss")<cr>
 nnoremap <leader>gh :call ConditionalVSplit(expand("%:r:r") . ".html.erb")<cr>
 nnoremap <leader>gp :call ConditionalVSplit(expand("spec/components/previews/%:t:r:r") . "_preview.rb")<cr>
 " Split out projectionist alternate file
-nnoremap <Leader>gt :AV<cr>
+nnoremap <leader>gt :AV<cr>
+nnoremap <leader>ct :call CreateSpec()<cr>
 
 nnoremap <leader>vl :vert sb#<cr>
 nnoremap <leader>vs :sp sb#<cr>
@@ -92,6 +93,9 @@ nnoremap <leader>gv :vsp <c-r>=findfile(rails#cfile())<cr><cr>
 " Open last buffer in vertical split
 
 function! ConditionalVSplit( fname )
+  if  a:fname == ""
+    return
+  endif
   let bufnum=bufnr(expand(a:fname))
   let winnum=bufwinnr(bufnum)
   if winnum != -1
@@ -101,6 +105,17 @@ function! ConditionalVSplit( fname )
     " Make new split as usual
     exe "vsplit " . a:fname
   endif
+endfunction
+
+" This is a hacky way to create a spec file for the current file that assumes
+" you're in a rails project and that the spec file will be in the same
+" directory as the current file.
+" TODO: figure out how to make this work with
+" projectionist mappings instead. Although maybe that's unnecessary, since
+" projectionist works better in this scenario in non-rails projects.
+function! CreateSpec()
+  let l:specname = substitute(expand("%:r") . "_spec.rb", "app", "spec", "")
+  call ConditionalVSplit(l:specname)
 endfunction
 
 command! -nargs=1 Split :call ConditionalVSplit("<args>")
