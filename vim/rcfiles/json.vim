@@ -1,1 +1,1 @@
-:command! JSONFormat %!python -m json.tool
+:command! JSONFormat %!python3 -m json.tool
