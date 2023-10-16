@@ -22,8 +22,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'petertriho/cmp-git'
 
 " For ultisnips users.
-" Plug 'SirVer/ultisnips'
-" Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 " Linting and prettifying
 Plug 'dense-analysis/ale'             " Async syntax engines
