@@ -17,15 +17,15 @@
   ic = commit
   me = merge --no-edit
   br = branch
-  hist = log --graph --max-count=20 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-  lhist = log main.. --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-  recent = for-each-ref --count=20 --sort=-committerdate --format='%(committerdate:relative)\t%(refname:short)\t\t%(contents:subject)' refs/heads/
   praise = blame
   st = status
   unstage = reset HEAD
+  undo = reset --soft HEAD^
+  hist = log --graph --max-count=20 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+  lhist = log main.. --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+  recent = for-each-ref --count=20 --sort=-committerdate --format='%(committerdate:relative)\t%(refname:short)\t\t%(contents:subject)' refs/heads/
   deploy = subtree push
   ctags = !.git/hooks/ctags
-  undo = reset --soft HEAD^
 [core]
   excludesfile = ~/.gitignore
 [init]
