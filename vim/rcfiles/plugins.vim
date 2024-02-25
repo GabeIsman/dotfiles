@@ -64,6 +64,7 @@ Plug 'chrisbra/csv.vim'               " CSV tools
 Plug 'lepture/vim-jinja'              " Jinja/Nunjucks syntax highlighting/indenting
 Plug 'thoughtbot/vim-rspec'           " Lightweight integration with rspec
 Plug 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (not bundled version)
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Visual guides
 Plug 'nanotech/jellybeans.vim'        " Great colorscheme

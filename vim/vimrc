@@ -31,6 +31,7 @@ source ~/.vim/rcfiles/plugins.vim
 " Anything that depends on plugins being loaded comes here
 source ~/.vim/rcfiles/colors.vim
 source ~/.vim/rcfiles/completion.vim
+source ~/.vim/rcfiles/treesitter.lua
 " source ~/.vim/rcfiles/lsp.vim
 
 " Allow for local overrides
