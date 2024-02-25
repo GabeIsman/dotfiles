@@ -2,7 +2,6 @@ let mapleader=" " " Map leader key to space
 
 if !has('nvim')
   set nocompatible              " be iMproved, required for Vundle
-  syntax on " enable syntax highlighting
   set autoread       " Automatically read buffers in when changed on disk
   set backspace=indent,eol,start " Make backspace delete things not just inserted
   set incsearch " search as we type
