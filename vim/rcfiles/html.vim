@@ -7,5 +7,8 @@ let g:html_indent_autotags = "source"
 " `gem install htmlbeautifier` if command not found.
 :command! HTMLFormat %!htmlbeautifier
 
+" These are useful in .svelte files, .jsx, etc. Just turn them on globally
+let g:ragtag_global_maps = 1
+
 " Map c-e to ragtag's 'close tag' mapping
 imap <c-e> <c-x>/
