@@ -32,6 +32,7 @@ source ~/.vim/rcfiles/plugins.vim
 source ~/.vim/rcfiles/colors.vim
 source ~/.vim/rcfiles/completion.vim
 source ~/.vim/rcfiles/treesitter.lua
+source ~/.vim/rcfiles/tree.lua
 " source ~/.vim/rcfiles/lsp.vim
 
 " Allow for local overrides

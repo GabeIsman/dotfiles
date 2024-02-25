@@ -54,7 +54,7 @@ nnoremap <leader>en :tabnew NOTES.md<cr>
 " Open scratch file with the same extension
 nnoremap <leader>es :vsp scratch.<c-r>=simplify(expand('%:e'))<cr><cr>
 " Open NERDTree at the current file's directory
-nnoremap <leader>ex :NERDTreeFind<cr>
+nnoremap <leader>ex :NvimTreeOpen<cr>
 
 map <leader>sl :Errors<cr>
 " Open all instances of the TODOs in the current diff against master

@@ -32,7 +32,7 @@ Plug 'dense-analysis/ale'             " Async syntax engines
 " Getting around
 Plug 'junegunn/fzf.vim'               " Fuzzy-finder
 Plug 'mhinz/vim-grepper'              " Enable ack/ag for searching
-Plug 'scrooloose/nerdtree'            " Replacement tree explorer
+Plug 'nvim-tree/nvim-tree.lua'            " Replacement tree explorer
 
 " Tim Pope's wonderful world of Vim
 Plug 'tpope/vim-abolish'              " Utilities for refactoring/abbreviating/converting variations of words
