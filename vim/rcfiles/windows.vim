@@ -11,21 +11,6 @@ nnoremap <leader><leader> :b#<cr>
 nnoremap <c-n> :bnext<cr>
 nnoremap <c-p> :bprevious<cr>
 
-" Add FZF binary to runtime path
-set rtp+=/usr/local/opt/fzf
-" FZF mappings
-nmap <leader>o :Files<cr>
-" Search [i]n the directory of the current file
-nmap <leader>i :Files <C-r>=escape(expand("%:p:h"), ' ') . '/'<cr><cr>
-nmap <leader>b :Buffers<cr>
-
-" FZF control keys
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
-  \ 'ctrl-s': 'split',
-  \ 'ctrl-v': 'vsplit' }
-
 let g:window_is_maximized = 0
 function! Maximize()
     if g:window_is_maximized

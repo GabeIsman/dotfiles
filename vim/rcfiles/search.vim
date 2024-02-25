@@ -5,7 +5,8 @@ set tags=.git/tags
 
 
 " Full project searches
-nnoremap <leader>fp :GrepperAg<space>
+" These are the search operations that I prefer to go straight to the qflist,
+" for live project searches see telescope.lua.
 nnoremap <leader>* :Grepper -tool rg -cword -noprompt<cr>
 nnoremap <leader>f/ :GrepperAg<space><c-r>/<cr>
 nnoremap gr :Grepper -tool rg -cword -noprompt<cr>

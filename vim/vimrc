@@ -33,7 +33,8 @@ source ~/.vim/rcfiles/colors.vim
 source ~/.vim/rcfiles/completion.vim
 source ~/.vim/rcfiles/treesitter.lua
 source ~/.vim/rcfiles/tree.lua
-" source ~/.vim/rcfiles/lsp.vim
+source ~/.vim/rcfiles/telescope.lua
+source ~/.vim/rcfiles/lsp.lua
 
 " Allow for local overrides
 silent! source .vimlocal

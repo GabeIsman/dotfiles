@@ -11,28 +11,31 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin('~/.vim/bundle')
 
-" Completion and snippets
-" Plug 'neovim/nvim-lspconfig'
+" Linting and language servers
+Plug 'dense-analysis/ale'             " Async syntax engines
+Plug 'williamboman/mason.nvim'        " Package manager for linters and LSPs
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'neovim/nvim-lspconfig'
+
+" Completion
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
-Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/plenary.nvim' " also a telescope dependency
 Plug 'petertriho/cmp-git'
 
-" For ultisnips users.
+" Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
-" Linting and prettifying
-Plug 'dense-analysis/ale'             " Async syntax engines
-
 " Getting around
-Plug 'junegunn/fzf.vim'               " Fuzzy-finder
 Plug 'mhinz/vim-grepper'              " Enable ack/ag for searching
-Plug 'nvim-tree/nvim-tree.lua'            " Replacement tree explorer
+Plug 'nvim-tree/nvim-tree.lua'        " Replacement tree explorer
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " Tim Pope's wonderful world of Vim
 Plug 'tpope/vim-abolish'              " Utilities for refactoring/abbreviating/converting variations of words
@@ -70,6 +73,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nanotech/jellybeans.vim'        " Great colorscheme
 Plug 'sainnhe/everforest'
 Plug 'mhinz/vim-signify'              " Git gutter signs
+
+" UI modifications
+Plug 'stevearc/dressing.nvim'         " Better prompt and select UI using telescope
 
 " Miscellaneous
 Plug 'yssl/QFEnter'                   " Better behavior for opening files from the quickfix window
