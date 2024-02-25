@@ -46,6 +46,7 @@ function! s:goyo_enter()
   set noshowcmd
   set scrolloff=999
   let g:relative_number_switching = 0
+  let g:limelight_conceal_ctermfg = 'gray'
   colorscheme seoul256
   Limelight
 endfunction
@@ -56,7 +57,6 @@ function! s:goyo_leave()
   set scrolloff=5
   let g:relative_number_switching = 1
   Limelight!
-  colorscheme jellybeans
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
