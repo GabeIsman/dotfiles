@@ -40,3 +40,4 @@ set sw=2 " Use 2 spaces when indenting visual blocks
 set tabstop=2 " spaces per tab visually
 set wrap           " Wrap lines that are bigger than the screen
 set hidden
+let loaded_matchparen=1 " Turn off Matchit plugin, causing performance issues.
