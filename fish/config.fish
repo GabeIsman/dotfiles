@@ -50,6 +50,8 @@ export VIRTUALFISH_DEFUALT_PYTHON=python3
 set PATH /Users/admin/.rbenv/shims $PATH
 status --is-interactive; and . (rbenv init -|psub)
 
+pyenv init - | source
+
 # Override fzf default command
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
