@@ -1,4 +1,6 @@
 local telescope = require("telescope");
+
+
 telescope.setup({
   defaults = {
     -- Default configuration for telescope goes here:
@@ -27,14 +29,23 @@ telescope.setup({
   },
   extensions = {
     -- Your extension configuration goes here:
-    -- extension_name = {
-    --   extension_config_key = value,
-    -- }
-    -- please take a look at the readme of the extension you want to configure
+    live_grep_args = {
+      auto_quoting = true, -- enable/disable auto-quoting
+      -- define mappings, e.g.
+      mappings = { -- extend mappings
+        i = {
+          ["<C-a>"] = require("telescope-live-grep-args.actions").quote_prompt(),
+          ["<C-i>"] = require("telescope-live-grep-args.actions").quote_prompt({ postfix = " --iglob " }),
+          ["<C-t>"] = require("telescope-live-grep-args.actions").quote_prompt({ postfix = " -t" }),
+        },
+      }
+      -- please take a look at the readme of the extension you want to configure
+    }
   }
+
 })
 
-    telescope.load_extension("fzf")
+telescope.load_extension("fzf")
 
 -- What my fingers remember
 vim.keymap.set("n", "<leader>o", "<cmd>Telescope find_files<cr>", { desc = "fuzzy find files" })
@@ -44,7 +55,7 @@ vim.keymap.set('n', '<leader>i', function() telescope.builtin.find_files({ cwd =
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "fuzzy find files" })
 vim.keymap.set('n', '<leader>f.', function() telescope.builtin.find_files({ cwd = vim.fn.expand('%:p:h') }) end)
 vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "find recently opened files" })
-vim.keymap.set("n", "<leader>fp", "<cmd>Telescope live_grep<cr>", { desc = "live project grep" })
+vim.keymap.set("n", "<leader>fp", function() telescope.extensions.live_grep_args.live_grep_args() end, { desc = "live project grep" })
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "fuzzy find open buffers" })
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "poke through help tags" })
 vim.keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "grep for word under cursor" })

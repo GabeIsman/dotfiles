@@ -36,6 +36,7 @@ Plug 'mhinz/vim-grepper'              " Enable ack/ag for searching
 Plug 'nvim-tree/nvim-tree.lua'        " Replacement tree explorer
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-telescope/telescope-live-grep-args.nvim', { 'do': 'make' }
 
 " Tim Pope's wonderful world of Vim
 Plug 'tpope/vim-abolish'              " Utilities for refactoring/abbreviating/converting variations of words
