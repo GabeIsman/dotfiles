@@ -12,8 +12,7 @@ mason_lspconfig.setup({
     "svelte",
     "html",
     "cssls",
-    "ruby_ls",
-    "rubocop"
+    "pyright",
   },
 
 
@@ -107,6 +106,12 @@ lspconfig["cssls"].setup({
 
 -- configure svelte server
 lspconfig["svelte"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+-- configure svelte server
+lspconfig["pyright"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
