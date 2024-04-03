@@ -73,7 +73,7 @@ Plug 'vim-ruby/vim-ruby'              " Install vim-ruby to get latest version (
 " Visual guides
 Plug 'nanotech/jellybeans.vim'        " Great colorscheme
 Plug 'sainnhe/everforest'
-Plug 'mhinz/vim-signify'              " Git gutter signs
+Plug 'lewis6991/gitsigns.nvim'        " Git gutter
 
 " UI modifications
 Plug 'stevearc/dressing.nvim'         " Better prompt and select UI using telescope
