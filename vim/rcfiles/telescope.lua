@@ -1,4 +1,5 @@
 local telescope = require("telescope");
+local builtin = require("telescope.builtin")
 
 
 telescope.setup({
@@ -49,11 +50,11 @@ telescope.load_extension("fzf")
 
 -- What my fingers remember
 vim.keymap.set("n", "<leader>o", "<cmd>Telescope find_files<cr>", { desc = "fuzzy find files" })
-vim.keymap.set('n', '<leader>i', function() telescope.builtin.find_files({ cwd = vim.fn.expand('%:p:h') }) end)
+vim.keymap.set('n', '<leader>i', function() builtin.find_files({ cwd = vim.fn.expand('%:p:h') }) end)
 
 -- More logical maps
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "fuzzy find files" })
-vim.keymap.set('n', '<leader>f.', function() telescope.builtin.find_files({ cwd = vim.fn.expand('%:p:h') }) end)
+vim.keymap.set('n', '<leader>f.', function() builtin.find_files({ cwd = vim.fn.expand('%:p:h') }) end)
 vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "find recently opened files" })
 vim.keymap.set("n", "<leader>fp", function() telescope.extensions.live_grep_args.live_grep_args() end, { desc = "live project grep" })
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "fuzzy find open buffers" })

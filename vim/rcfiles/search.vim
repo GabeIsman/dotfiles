@@ -20,6 +20,8 @@ vnoremap <leader>fv <plug>(GrepperOperator)
 
 " Find todos
 command! Todo Grepper -noprompt -tool git -query -E '(TODO|FIXME|XXX):'
+map <leader>td :Todo
+
 
 " Replace current word (not necessarily word-bounded) in whole file, with
 " confirm
