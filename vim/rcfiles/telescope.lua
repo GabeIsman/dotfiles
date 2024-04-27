@@ -36,8 +36,9 @@ telescope.setup({
       mappings = { -- extend mappings
         i = {
           ["<C-a>"] = require("telescope-live-grep-args.actions").quote_prompt(),
-          ["<C-i>"] = require("telescope-live-grep-args.actions").quote_prompt({ postfix = " --iglob " }),
+          ["<C-i>"] = require("telescope-live-grep-args.actions").quote_prompt({ postfix = " --iglob *" }),
           ["<C-t>"] = require("telescope-live-grep-args.actions").quote_prompt({ postfix = " -t" }),
+          ["<C-s>"] = require("telescope-live-grep-args.actions").quote_prompt({ postfix = " --iglob *spec*" }),
         },
       }
       -- please take a look at the readme of the extension you want to configure
