@@ -36,6 +36,7 @@ source ~/.vim/rcfiles/tree.lua
 source ~/.vim/rcfiles/telescope.lua
 source ~/.vim/rcfiles/lsp.lua
 source ~/.vim/rcfiles/gitsigns.lua
+source ~/.vim/rcfiles/conform.lua
 
 " Allow for local overrides
 silent! source .vimlocal

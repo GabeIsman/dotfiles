@@ -12,7 +12,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin('~/.vim/bundle')
 
 " Linting and language servers
-Plug 'dense-analysis/ale'             " Async syntax engines
+Plug 'stevearc/conform.nvim'          " Fix on save
 Plug 'williamboman/mason.nvim'        " Package manager for linters and LSPs
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
