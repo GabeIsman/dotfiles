@@ -59,4 +59,3 @@ let g:VM_maps["Add Cursor Down"]    = '<M-j>'   " new cursor down
 let g:VM_maps["Add Cursor Up"]      = '<M-k>'   " new cursor up
 let g:VM_maps["Toggle Mappings"]    = '<CR>'    " toggle VM buffer mappings
 let g:VM_silent_exit = 1
-let g:VM_quit_after_leaving_insert_mode = 1
