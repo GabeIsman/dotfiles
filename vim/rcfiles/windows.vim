@@ -43,6 +43,9 @@ nnoremap <leader>ex :NvimTreeFindFile<cr>
 nnoremap <leader>ed :e <c-r>=expand('%:h')<cr>/
 nnoremap <leader>vsp :vsp <c-r>=expand('%:h')<cr>/
 nnoremap <leader>sp :sp <c-r>=expand('%:h')<cr>/
+" Save a copy of the current file in the current directory, current copy
+" becomes alternate.
+nnoremap <leader>ec :saveas <c-r>=expand('%:h')<cr>/
 " Pull in the contents of a file
 nnoremap <leader>rf :r <c-r>=expand('%:h')<cr>/
 " Rename the current file
