@@ -46,6 +46,9 @@ nnoremap <leader>r/ :%s/\<<c-r>/\>//gc<left><left><left>
 " Search for the visual selection
 vnoremap / "vy/<c-r>v<cr>
 vnoremap ? "vy?<c-r>v<cr>
+" Search for the contents of the unnamed register. Useful for workflows like
+" replace text, realize you need to update that same text elsewhere, <leader>/
+nnoremap <leader>/ /<c-r>"<cr>
 
 " Remap vim-Visual-multi
 let g:VM_maps = {}
