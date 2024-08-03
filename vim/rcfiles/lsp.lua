@@ -110,14 +110,20 @@ lspconfig["svelte"].setup({
 	on_attach = on_attach,
 })
 
--- configure svelte server
+-- configure python server
 lspconfig["pyright"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
 
--- configure svelte server
+-- configure ruby server
 lspconfig["ruby_ls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- configure rubocop server
+lspconfig["rubocop"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
@@ -144,7 +150,6 @@ lspconfig["lua_ls"].setup({
 })
 
 -- Disable ESLint LSP server and hide virtual text in Neovim
--- Add this to your init.lua or init.vim file
 local isLspDiagnosticsVisible = true
 
 local toggleVirtualtextVisibility = function()
