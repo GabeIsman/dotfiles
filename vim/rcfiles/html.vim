@@ -12,3 +12,6 @@ let g:ragtag_global_maps = 1
 
 " Map c-e to ragtag's 'close tag' mapping
 imap <c-e> <c-x>/
+
+" open diff file, specific mapping for tmp-content
+nnoremap <leader>od :call ConditionalVSplit(expand("posts/raw_diffs/%:t:r") . ".diff")<cr>
