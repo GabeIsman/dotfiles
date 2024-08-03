@@ -13,6 +13,7 @@ call plug#begin('~/.vim/bundle')
 
 " Linting and language servers
 Plug 'stevearc/conform.nvim'          " Fix on save
+Plug 'mfussenegger/nvim-lint'         " Lint on save
 Plug 'williamboman/mason.nvim'        " Package manager for linters and LSPs
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
