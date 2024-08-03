@@ -63,6 +63,7 @@ Plug 'glts/vim-textobj-comment'       " Comments
 Plug 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plug 'tommcdo/vim-exchange'           " Exchange regions of text
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects' " Text objects based on treesitter parsing
 
 " Language packs
 Plug 'tpope/vim-rails'                " Tons of features for rails projects
@@ -86,8 +87,5 @@ Plug 'stevearc/dressing.nvim'         " Better prompt and select UI using telesc
 Plug 'yssl/QFEnter'                   " Better behavior for opening files from the quickfix window
 Plug 'cohama/lexima.vim'              " Auto matching pairs
 Plug 'vim-test/vim-test'              " Launch tests
-
-" AI
-Plug 'github/copilot.vim'
 
 call plug#end()

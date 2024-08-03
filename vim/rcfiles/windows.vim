@@ -29,6 +29,7 @@ nnoremap <leader>. @:
 nnoremap <leader>rd :redraw!<cr>
 " Map :quit
 nnoremap <leader>q :quit<cr>
+nnoremap <leader><esc> :Obsession<cr>:qall!<cr>
 
 " Write current buffer
 nmap <leader>s :w!<CR>

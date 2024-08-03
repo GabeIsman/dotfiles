@@ -15,3 +15,4 @@ set statusline+=\%q                " Quick- or locaction-list indicator
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %l/%L:%c
+set statusline+=\ [0x%B]            " Codepoint under cursor
