@@ -39,16 +39,19 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-live-grep-args.nvim', { 'do': 'make' }
 
+" Git
+Plug 'tpope/vim-fugitive'             " Add nice git bindings/interactions
+Plug 'rbong/vim-flog'                 " Branch browsing
+Plug 'tpope/vim-rhubarb'              " Enable :Gbrowse for Github
+
 " Tim Pope's wonderful world of Vim
 Plug 'tpope/vim-abolish'              " Utilities for refactoring/abbreviating/converting variations of words
 Plug 'tpope/vim-commentary'           " Adds easy comment toggling
 Plug 'tpope/vim-eunuch'               " Adds some basic unix commands
-Plug 'tpope/vim-fugitive'             " Add nice git bindings/interactions
 Plug 'tpope/vim-obsession'            " Nicer session handling
 Plug 'tpope/vim-projectionist'        " Projectionist for non-rails projects
 Plug 'tpope/vim-ragtag'               " Some goodies for better tag manipulation in XML-ish documents
 Plug 'tpope/vim-repeat'               " Make . work with vim-surround and other plugins
-Plug 'tpope/vim-rhubarb'              " Enable :Gbrowse
 Plug 'tpope/vim-surround'             " Handle quotes, parens, tags much more easily
 Plug 'tpope/vim-unimpaired'           " A variety of pair-wise key bindings
 
