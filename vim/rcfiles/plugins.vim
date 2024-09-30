@@ -56,13 +56,16 @@ Plug 'tpope/vim-unimpaired'           " A variety of pair-wise key bindings
 
 " Custom motions and objects
 Plug 'kana/vim-textobj-user'          " Declarative API for custom text objects
-Plug 'chaoren/vim-wordmotion'         " More granular word motions for camel and snake case
+"Plug 'chaoren/vim-wordmotion'         " More granular word motions for camel and snake case
 Plug 'kana/vim-textobj-line'          " Custom line text object
 Plug 'glts/vim-textobj-comment'       " Comments
 Plug 'nelstrom/vim-textobj-rubyblock' " Ruby block text objects
 Plug 'tommcdo/vim-exchange'           " Exchange regions of text
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects' " Text objects based on treesitter parsing
+
+" Mini tools
+Plug 'echasnovski/mini.nvim'
 
 " Language packs
 Plug 'tpope/vim-rails'                " Tons of features for rails projects
@@ -86,5 +89,7 @@ Plug 'stevearc/dressing.nvim'         " Better prompt and select UI using telesc
 Plug 'yssl/QFEnter'                   " Better behavior for opening files from the quickfix window
 Plug 'cohama/lexima.vim'              " Auto matching pairs
 Plug 'vim-test/vim-test'              " Launch tests
+
+Plug 'github/copilot.vim'
 
 call plug#end()

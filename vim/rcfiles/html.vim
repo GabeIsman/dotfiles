@@ -14,4 +14,4 @@ let g:ragtag_global_maps = 1
 imap <c-e> <c-x>/
 
 " open diff file, specific mapping for tmp-content
-nnoremap <leader>od :call ConditionalVSplit(expand("posts/raw_diffs/%:t:r") . ".diff")<cr>
+autocmd FileType html nnoremap <buffer> <leader>gd :call ConditionalVSplit(expand("posts/raw_diffs/%:t:r") . ".diff")<cr>

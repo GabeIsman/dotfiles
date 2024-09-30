@@ -66,6 +66,7 @@ vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "find 
 vim.keymap.set("n", "<leader>fp", function()
 	telescope.extensions.live_grep_args.live_grep_args()
 end, { desc = "live project grep" })
+vim.keymap.set("n", "<leader>rg", builtin.resume, { desc = "Resume last grep" })
 vim.keymap.set("n", "<leader>f.", function()
 	telescope.extensions.live_grep_args.live_grep_args({ cwd = vim.fn.expand("%:p:h") })
 end, { desc = "live project grep" })

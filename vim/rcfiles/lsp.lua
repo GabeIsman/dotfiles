@@ -13,8 +13,9 @@ mason_lspconfig.setup({
 		"html",
 		"cssls",
 		"pyright",
-		"ruby_ls",
+		"ruby_lsp",
 		"rubocop",
+		"rust_analyzer",
 	},
 
 	-- Automatically install missing parsers when entering buffer
@@ -117,13 +118,19 @@ lspconfig["pyright"].setup({
 })
 
 -- configure ruby server
-lspconfig["ruby_ls"].setup({
+lspconfig["ruby_lsp"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
 
 -- configure rubocop server
 lspconfig["rubocop"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- configure rust server
+lspconfig["rust_analyzer"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
@@ -149,15 +156,3 @@ lspconfig["lua_ls"].setup({
 	},
 })
 
--- Disable ESLint LSP server and hide virtual text in Neovim
-local isLspDiagnosticsVisible = true
-
-local toggleVirtualtextVisibility = function()
-	isLspDiagnosticsVisible = not isLspDiagnosticsVisible
-	vim.diagnostic.config({
-		virtual_text = isLspDiagnosticsVisible,
-		underline = isLspDiagnosticsVisible,
-	})
-end
-toggleVirtualtextVisibility()
-vim.keymap.set("n", "<leader>ls", toggleVirtualtextVisibility)

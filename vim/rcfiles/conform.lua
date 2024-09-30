@@ -7,7 +7,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		lua = { "stylua" },
 		javascript = { "prettier", "tsserver" },
-		ruby = { "rubocop" },
+		-- ruby = { "rubocop" },
 		scss = { "prettier" },
 		svelte = { "prettier" },
 		-- Use the "*" filetype to run formatters on all filetypes.
@@ -15,17 +15,5 @@ require("conform").setup({
 		-- Use the "_" filetype to run formatters on filetypes that don't
 		-- have other formatters configured.
 		["_"] = { "trim_whitespace" },
-	},
-	formatters = {
-		rubocop = {
-			command = "rubocop",
-			prepend_args = {
-				"--server",
-				"--fix-layout",
-				"--format",
-				"files",
-			},
-			stdin = true,
-		},
 	},
 })

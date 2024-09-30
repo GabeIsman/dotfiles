@@ -3,7 +3,6 @@ source ~/.vim/rcfiles/general.vim
 
 " Source all the focused config files
 source ~/.vim/rcfiles/abbreviations.vim
-source ~/.vim/rcfiles/configmgmt.vim
 source ~/.vim/rcfiles/copilot.vim
 source ~/.vim/rcfiles/disk.vim
 source ~/.vim/rcfiles/git.vim
@@ -25,6 +24,10 @@ source ~/.vim/rcfiles/surround.vim
 source ~/.vim/rcfiles/test.vim
 source ~/.vim/rcfiles/windows.vim
 
+source ~/.vim/rcfiles/configmgmt.lua
+source ~/.vim/rcfiles/virtualtext.lua
+source ~/.vim/rcfiles/buffers.lua
+
 " Load the plugins
 source ~/.vim/rcfiles/plugins.vim
 
@@ -38,7 +41,7 @@ source ~/.vim/rcfiles/telescope.lua
 source ~/.vim/rcfiles/lsp.lua
 source ~/.vim/rcfiles/gitsigns.lua
 source ~/.vim/rcfiles/conform.lua
-source ~/.vim/rcfiles/linting.lua
+source ~/.vim/rcfiles/mini.lua
 
 " Allow for local overrides
 silent! source .vimlocal

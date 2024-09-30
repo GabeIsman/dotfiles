@@ -29,7 +29,7 @@ nnoremap <leader>. @:
 nnoremap <leader>rd :redraw!<cr>
 " Map :quit
 nnoremap <leader>q :quit<cr>
-nnoremap <leader><esc> :Obsession<cr>:qall!<cr>
+"nnoremap <leader><esc> :Obsession<cr>:qall!<cr>
 
 " Write current buffer
 nmap <leader>s :w!<CR>
@@ -60,6 +60,8 @@ nnoremap <leader>gj :call ConditionalVSplit(expand("%:r:r") . ".js")<cr>
 nnoremap <leader>gc :call ConditionalVSplit(expand("%:r:r") . ".scss")<cr>
 nnoremap <leader>gh :call ConditionalVSplit(expand("%:r:r") . ".html.erb")<cr>
 nnoremap <leader>gp :call ConditionalVSplit(expand("spec/components/previews/%:t:r:r") . "_preview.rb")<cr>
+" Open current file as a post in endrun, file must be named <id>.<extension>
+nnoremap <leader>ge :exec '!open https://www.themarshallproject.org/admin/posts/' . expand("%:t:r") . '/edit'<cr><cr>
 " Split out projectionist alternate file
 nnoremap <leader>gt :AV<cr>
 nnoremap <leader>ct :call CreateSpec()<cr>
