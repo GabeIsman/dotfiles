@@ -41,3 +41,5 @@ set tabstop=2 " spaces per tab visually
 set wrap           " Wrap lines that are bigger than the screen
 set hidden
 let loaded_matchparen=1 " Turn off Matchit plugin, causing performance issues.
+" Turn off pair-matching for basic punctuation
+let g:lexima_enable_basic_rules = 0

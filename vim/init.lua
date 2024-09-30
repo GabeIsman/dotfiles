@@ -7,13 +7,10 @@ package.path = package.path .. ";" .. vim.fn.expand("~/.vim/?.lua")
 vim.opt.packpath = vim.opt.runtimepath:get()
 --
 -- Basic setup, including mapleader
-vim.cmd("source ~/.vim/rcfiles/general.vim")
+vim.cmd.source("~/.vim/rcfiles/general.vim")
 
 -- Source all the focused config files
-vim.cmd.source("~/.vim/rcfiles/guides.vim")
-vim.cmd.source("~/.vim/rcfiles/html.vim")
-vim.cmd.source("~/.vim/rcfiles/javascript.vim")
-vim.cmd.source("~/.vim/rcfiles/json.vim")
+vim.cmd.source("~/.vim/rcfiles/windows.vim")
 vim.cmd.source("~/.vim/rcfiles/markdown.vim")
 vim.cmd.source("~/.vim/rcfiles/mjml.vim")
 vim.cmd.source("~/.vim/rcfiles/python.vim")
@@ -26,19 +23,21 @@ vim.cmd.source("~/.vim/rcfiles/spelling.vim")
 vim.cmd.source("~/.vim/rcfiles/statusline.vim")
 vim.cmd.source("~/.vim/rcfiles/surround.vim")
 vim.cmd.source("~/.vim/rcfiles/test.vim")
-vim.cmd.source("~/.vim/rcfiles/windows.vim")
 
 -- Source lua config files
+require("rcfiles.configmgmt")
 require("rcfiles.disk")
 require("rcfiles.copilot")
 require("rcfiles.git")
 require("rcfiles.abbreviations")
-require("rcfiles.configmgmt")
+require("rcfiles.html")
+require("rcfiles.javascript")
+require("rcfiles.json")
 require("rcfiles.virtualtext")
 require("rcfiles.buffers")
 
 -- Load the plugins (Vimscript)
-vim.cmd("source ~/.vim/rcfiles/plugins.vim")
+vim.cmd.source("~/.vim/rcfiles/plugins.vim")
 
 -- Source plugin-related Lua config files
 require("rcfiles.colors")
