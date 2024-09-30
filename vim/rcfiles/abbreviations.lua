@@ -1,3 +1,3 @@
 -- Correct my fat fingers
-vim.cmd("iabbrev function function")
-vim.cmd("iabbrev the the")
+vim.cmd("iabbrev funciton function")
+vim.cmd("iabbrev teh the")
