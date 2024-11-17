@@ -59,6 +59,6 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden'
 set -g theme_nerd_fonts yes
 set -g default_user gabe
 set -g theme_date_format "+%a %H:%M"
-set -g theme_newline_prompt
+set -g theme_newline_cursor yes
 set -g theme_color_scheme zenburn
 fish_config theme choose 'Tomorrow Night Bright'
