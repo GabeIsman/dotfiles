@@ -74,6 +74,9 @@ local on_attach = function(client, bufnr)
 
 	opts.desc = "Restart LSP"
 	keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
+	-- Restore gqq
+	vim.api.nvim_set_option_value("formatexpr", "", {})
 end
 
 -- used to enable autocompletion (assign to every lsp server config)

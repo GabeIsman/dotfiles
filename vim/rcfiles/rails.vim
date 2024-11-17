@@ -4,10 +4,7 @@ map <Leader>ts :call RunNearestSpec()<cr>
 map <Leader>tl :call RunLastSpec()<cr>
 map <Leader>ta :call RunAllSpecs()<cr>
 " Open a controller
-map <leader>cs :Scontroller<space>
 map <leader>cv :Vcontroller<space>
-map <leader>ce :Econtroller<space>
-map <leader>ct :Tcontroller<space>
 " Open a model
 map <leader>ms :Smodel<space>
 map <leader>mv :Vmodel<space>
