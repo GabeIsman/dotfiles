@@ -37,6 +37,8 @@ Plug 'nvim-tree/nvim-tree.lua'        " Replacement tree explorer
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-live-grep-args.nvim', { 'do': 'make' }
+Plug 'stevearc/oil.nvim'              " File system editing
+Plug 'stevearc/quicker.nvim'          " More powerful quickfix
 
 " Git
 Plug 'tpope/vim-fugitive'             " Add nice git bindings/interactions
