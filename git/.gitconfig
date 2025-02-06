@@ -32,7 +32,7 @@
   templatedir = ~/.git_template
   defaultBranch = main
 [diff]
-  algorithm = patience
+  algorithm = histogram
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
