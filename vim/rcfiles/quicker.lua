@@ -15,4 +15,9 @@ require("quicker").setup({
 			desc = "Collapse quickfix context",
 		},
 	},
+	highlight = {
+		lsp = false,
+		load_buffers = false,
+		treesitter = false,
+	},
 })
