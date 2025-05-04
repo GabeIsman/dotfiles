@@ -30,7 +30,7 @@ end
 
 # checkout a PR into a branch, and switch to branch
 function copr -d "Checkout a pr, update dependencies. Takes the GH PR ID as an argument." -a id
-  gh pr checkout $id; and bundle install; and yarn install; and bundle exec rake db:migrate
+  gh pr checkout $id; and bundle install; and npm install; and bundle exec rake db:migrate
 end
 
 function rb -d "List branches with recent commits" -a num
