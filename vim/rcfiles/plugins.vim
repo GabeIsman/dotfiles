@@ -29,7 +29,7 @@ Plug 'petertriho/cmp-git'
 " Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+" Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 " Getting around
 Plug 'mhinz/vim-grepper'              " Enable ack/ag for searching

@@ -8,7 +8,7 @@ cmp.setup({
 			-- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
 			-- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
 			-- require('snippy').expand_snippet(args.body) -- For `snippy` users.
-			vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+			-- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
 		end,
 	},
 	window = {
@@ -39,9 +39,9 @@ cmp.setup({
 			{ name = "nvim_lsp" },
 		},
 		-- Snippets
-		{
-			{ name = "ultisnips" },
-		},
+		-- {
+		-- 	{ name = "ultisnips" },
+		-- },
 		-- Use all open buffers as a source
 		{
 			{
@@ -83,13 +83,6 @@ cmp.setup.cmdline(":", {
 		{ name = "cmdline" },
 	}),
 })
-
--- Set up lspconfig.
--- local capabilities = require('cmp_nvim_lsp').default_capabilities()
--- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
--- require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
---   capabilities = capabilities
--- }
 
 -- Set up git source
 require("cmp_git").setup()
