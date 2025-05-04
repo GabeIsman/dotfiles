@@ -23,23 +23,23 @@ endif
 
 set autowriteall   " Automatically write buffers when opening a new one (various commands)
 set clipboard=unnamed " Use the system clipboard by default for yanking/pasting
-" set cursorline " highlight current line
-set expandtab  " tabs are spaces
-set lazyredraw " redraw only when needed
+set expandtab      " tabs are spaces
+set lazyredraw     " redraw only when needed
 set linebreak      " Break visual wraps at reasonable breakpoints, not at the last visible character
 set nobackup       " no backup files
 set noswapfile     " no swap files
 set nowritebackup  " only in case you don't want a backup file while editing
-set number  " show line numbers
+set number         " show line numbers
 set scrolloff=7    " Keep one line below/above cursor
-set showmatch " highlight matching brackets
-set softtabstop=2 " spaces per tab when editing
+set showmatch      " highlight matching brackets
+set softtabstop=2  " spaces per tab when editing
 set splitbelow     " Make the new vertical split the bottom one
 set splitright     " Make the new vertical split the right one
-set sw=2 " Use 2 spaces when indenting visual blocks
-set tabstop=2 " spaces per tab visually
+set sw=2           " Use 2 spaces when indenting visual blocks
+set tabstop=2      " spaces per tab visually
 set wrap           " Wrap lines that are bigger than the screen
-set hidden
+set hidden         " don't unload buffers when no longer visible
+set mouse=         " disable the mouse
 let loaded_matchparen=1 " Turn off Matchit plugin, causing performance issues.
 " Turn off pair-matching for basic punctuation
 let g:lexima_enable_basic_rules = 0
